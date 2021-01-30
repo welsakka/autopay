@@ -15,6 +15,8 @@
 		7FCF003A25C27BC900D152D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF003825C27BC900D152D7 /* LaunchScreen.storyboard */; };
 		7FCF004525C27BC900D152D7 /* autopayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF004425C27BC900D152D7 /* autopayTests.swift */; };
 		7FCF005025C27BC900D152D7 /* autopayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF004F25C27BC900D152D7 /* autopayUITests.swift */; };
+		7FCF006125C27E2F00D152D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF006025C27E2F00D152D7 /* LoginViewController.swift */; };
+		7FCF006625C3C83900D152D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF006525C3C83900D152D7 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7FCF004B25C27BC900D152D7 /* autopayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autopayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF004F25C27BC900D152D7 /* autopayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autopayUITests.swift; sourceTree = "<group>"; };
 		7FCF005125C27BC900D152D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FCF006025C27E2F00D152D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7FCF006525C3C83900D152D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 				7FCF002D25C27BC700D152D7 /* AppDelegate.swift */,
 				7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */,
 				7FCF003125C27BC700D152D7 /* ViewController.swift */,
+				7FCF006025C27E2F00D152D7 /* LoginViewController.swift */,
 				7FCF003325C27BC700D152D7 /* Main.storyboard */,
+				7FCF006525C3C83900D152D7 /* RegisterViewController.swift */,
 				7FCF003625C27BC900D152D7 /* Assets.xcassets */,
 				7FCF003825C27BC900D152D7 /* LaunchScreen.storyboard */,
 				7FCF003B25C27BC900D152D7 /* Info.plist */,
@@ -258,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCF006125C27E2F00D152D7 /* LoginViewController.swift in Sources */,
+				7FCF006625C3C83900D152D7 /* RegisterViewController.swift in Sources */,
 				7FCF003225C27BC700D152D7 /* ViewController.swift in Sources */,
 				7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */,
 				7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */,
