@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */; };
 		7FB0725725C5E4B0007CF8BE /* RegisterCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0725625C5E4B0007CF8BE /* RegisterCreditViewController.swift */; };
 		7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002D25C27BC700D152D7 /* AppDelegate.swift */; };
 		7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBankViewController.swift; sourceTree = "<group>"; };
 		7FB0725625C5E4B0007CF8BE /* RegisterCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCreditViewController.swift; sourceTree = "<group>"; };
 		7FCF002A25C27BC700D152D7 /* autopay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autopay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF002D25C27BC700D152D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,8 +91,18 @@
 				7FB0725625C5E4B0007CF8BE /* RegisterCreditViewController.swift */,
 				7FCF006D25C5D99A00D152D7 /* RegisterPaymentViewController.swift */,
 				7FCF006525C3C83900D152D7 /* RegisterViewController.swift */,
+				7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F4EE9DD25C8F4EE0035C8E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FCF003325C27BC700D152D7 /* Main.storyboard */,
+				7FCF003825C27BC900D152D7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7FCF002125C27BC700D152D7 = {
@@ -116,12 +128,11 @@
 		7FCF002C25C27BC700D152D7 /* autopay */ = {
 			isa = PBXGroup;
 			children = (
+				7F4EE9DD25C8F4EE0035C8E1 /* View */,
 				7F4EE9D925C8F3DC0035C8E1 /* Controller */,
 				7FCF002D25C27BC700D152D7 /* AppDelegate.swift */,
 				7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */,
-				7FCF003325C27BC700D152D7 /* Main.storyboard */,
 				7FCF003625C27BC900D152D7 /* Assets.xcassets */,
-				7FCF003825C27BC900D152D7 /* LaunchScreen.storyboard */,
 				7FCF003B25C27BC900D152D7 /* Info.plist */,
 			);
 			path = autopay;
@@ -278,6 +289,7 @@
 				7FCF006E25C5D99A00D152D7 /* RegisterPaymentViewController.swift in Sources */,
 				7FCF006125C27E2F00D152D7 /* LoginViewController.swift in Sources */,
 				7FCF006625C3C83900D152D7 /* RegisterViewController.swift in Sources */,
+				7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */,
 				7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */,
 				7FB0725725C5E4B0007CF8BE /* RegisterCreditViewController.swift in Sources */,
 				7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */,

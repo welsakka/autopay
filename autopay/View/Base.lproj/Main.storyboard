@@ -271,6 +271,56 @@
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="69.642857142857139"/>
         </scene>
+        <!--Register Bank View Controller-->
+        <scene sceneID="qc2-u7-jdS">
+            <objects>
+                <viewController storyboardIdentifier="registerBank" id="kYT-uC-ADt" customClass="RegisterBankViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7l-XC-OFB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQi-fm-qao">
+                                <rect key="frame" x="40" y="184" width="296" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="I4T-fc-CdP">
+                                <rect key="frame" x="25" y="304" width="364" height="83"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-hS-MQF">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Routing Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQM-Ne-wcK">
+                                        <rect key="frame" x="0.0" y="49" width="364" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQI-TO-qcs">
+                                <rect key="frame" x="204" y="447" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eK1-IP-6J8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CQI-TO-qcs" firstAttribute="top" secondItem="I4T-fc-CdP" secondAttribute="bottom" constant="60" id="4hA-Df-gJB"/>
+                            <constraint firstItem="eK1-IP-6J8" firstAttribute="trailing" secondItem="I4T-fc-CdP" secondAttribute="trailing" constant="25" id="4hT-IV-C2j"/>
+                            <constraint firstItem="OQi-fm-qao" firstAttribute="leading" secondItem="eK1-IP-6J8" secondAttribute="leading" constant="40" id="5lp-yP-2Us"/>
+                            <constraint firstItem="OQi-fm-qao" firstAttribute="top" secondItem="eK1-IP-6J8" secondAttribute="top" constant="140" id="RfG-Jr-p7N"/>
+                            <constraint firstItem="I4T-fc-CdP" firstAttribute="top" secondItem="OQi-fm-qao" secondAttribute="bottom" constant="60" id="VcG-EG-1mO"/>
+                            <constraint firstItem="I4T-fc-CdP" firstAttribute="leading" secondItem="eK1-IP-6J8" secondAttribute="leading" constant="25" id="fed-yc-UFz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99Z-1N-csI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3648" y="1422"/>
+        </scene>
     </scenes>
     <resources>
         <image name="building.columns.fill" catalog="system" width="128" height="113"/>
