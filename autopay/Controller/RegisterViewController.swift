@@ -15,7 +15,11 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func clickNext(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "registerPayment") as! RegisterPaymentViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -20,8 +20,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func clickRegister(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "register") as! RegisterViewController
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterCreditViewController.swift
 //  autopay
 //
 //  Created by Waleed E on 1/30/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterCreditViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
