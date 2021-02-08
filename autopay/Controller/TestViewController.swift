@@ -1,23 +1,24 @@
 //
-//  RegisterCreditViewController.swift
+//  TestViewController.swift
 //  autopay
 //
-//  Created by Waleed E on 2/2/21.
+//  Created by Waleed E on 2/4/21.
 //
 
 import UIKit
 
-class RegisterCreditViewController: UIViewController {
+class TestViewController: UIViewController {
+    
+    var headerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func clickNext(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "profileView") as! ProfileViewController
-        navigationController?.pushViewController(vc, animated: true)
+        
+        headerView = UIView()
+        headerView.backgroundColor = .red
+        self.view.addSubview(headerView)
     }
     
 

@@ -1,26 +1,30 @@
 //
-//  RegisterCreditViewController.swift
+//  HomeViewController.swift
 //  autopay
 //
-//  Created by Waleed E on 2/2/21.
+//  Created by Waleed E on 2/7/21.
 //
 
 import UIKit
 
-class RegisterCreditViewController: UIViewController {
+class HomeViewController: UIViewController {
+    
+    var groupsArr : [Group] = []
+    
+    @IBOutlet var GroupsStackView: UIStackView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let netflix = Group()
+        let rent = Group()
+        
+        netflix.setGroupName(newName: "Netflix fam")
+        rent.setGroupName(newName: "Rodney's tribute")
     }
     
-    @IBAction func clickNext(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "profileView") as! ProfileViewController
-        navigationController?.pushViewController(vc, animated: true)
-    }
     
-
     /*
     // MARK: - Navigation
 

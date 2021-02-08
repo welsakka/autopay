@@ -1,5 +1,5 @@
 //
-//  RegisterCreditViewController.swift
+//  ProfileViewController.swift
 //  autopay
 //
 //  Created by Waleed E on 2/2/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterCreditViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,11 +16,10 @@ class RegisterCreditViewController: UIViewController {
     }
     
     @IBAction func clickNext(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "profileView") as! ProfileViewController
-        navigationController?.pushViewController(vc, animated: true)
+        let vc = TestViewController()
+        self.present(vc, animated: true, completion: nil)
     }
     
-
     /*
     // MARK: - Navigation
 

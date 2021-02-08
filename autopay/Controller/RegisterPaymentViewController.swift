@@ -22,6 +22,8 @@ class RegisterPaymentViewController: UIViewController {
     }
     
     @IBAction func clickBank(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "registerBank") as! RegisterBankViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     /*
     // MARK: - Navigation
