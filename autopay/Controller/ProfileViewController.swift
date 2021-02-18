@@ -16,8 +16,8 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func clickNext(_ sender: Any) {
-        let vc = TestViewController()
-        self.present(vc, animated: true, completion: nil)
+        let vc = storyboard?.instantiateViewController(identifier: "loginView") as! LoginViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     /*

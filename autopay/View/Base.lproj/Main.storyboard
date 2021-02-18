@@ -385,7 +385,7 @@
         <!--Login View Controller-->
         <scene sceneID="fV2-NI-Bao">
             <objects>
-                <viewController id="JWO-HA-K5B" customClass="LoginViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" id="JWO-HA-K5B" customClass="LoginViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TPp-Ah-J5G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,6 +414,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPz-HB-hje">
                                 <rect key="frame" x="188" y="407" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="clickLogin:" destination="JWO-HA-K5B" eventType="touchUpInside" id="juf-6M-5Tl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fTx-Ry-Ih8"/>
@@ -464,20 +467,24 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="person.circle" catalog="system"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Cp-Zb-c9f">
-                                <rect key="frame" x="164" y="369" width="110" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Cp-Zb-c9f">
+                                <rect key="frame" x="20" y="166" width="374" height="656"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="twe-Sk-4NP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="twe-Sk-4NP" firstAttribute="trailing" secondItem="iuL-qz-thX" secondAttribute="trailing" constant="20" id="1HN-Ye-X2n"/>
+                            <constraint firstItem="9Cp-Zb-c9f" firstAttribute="top" secondItem="cBQ-jp-mvb" secondAttribute="bottom" constant="40" id="6iG-pg-JaS"/>
                             <constraint firstItem="Go5-hX-HQh" firstAttribute="top" secondItem="twe-Sk-4NP" secondAttribute="top" constant="25" id="BOT-I2-bSN"/>
                             <constraint firstItem="Go5-hX-HQh" firstAttribute="leading" secondItem="twe-Sk-4NP" secondAttribute="leading" constant="25" id="Cui-Q4-riT"/>
+                            <constraint firstItem="twe-Sk-4NP" firstAttribute="bottom" secondItem="9Cp-Zb-c9f" secondAttribute="bottom" constant="40" id="It0-oh-y7s"/>
                             <constraint firstItem="iuL-qz-thX" firstAttribute="leading" secondItem="cBQ-jp-mvb" secondAttribute="trailing" constant="29" id="JUL-yN-MMM"/>
+                            <constraint firstItem="9Cp-Zb-c9f" firstAttribute="leading" secondItem="twe-Sk-4NP" secondAttribute="leading" constant="20" id="Z59-Yf-GdY"/>
                             <constraint firstItem="cBQ-jp-mvb" firstAttribute="top" secondItem="twe-Sk-4NP" secondAttribute="top" constant="13" id="esj-rI-9Kd"/>
                             <constraint firstItem="iuL-qz-thX" firstAttribute="top" secondItem="twe-Sk-4NP" secondAttribute="top" constant="27" id="rKB-Zj-N3Q"/>
+                            <constraint firstItem="cBQ-jp-mvb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Go5-hX-HQh" secondAttribute="trailing" constant="8" symbolic="YES" id="sKV-mu-ibY"/>
+                            <constraint firstItem="twe-Sk-4NP" firstAttribute="trailing" secondItem="9Cp-Zb-c9f" secondAttribute="trailing" constant="20" id="zO6-VV-HKU"/>
                         </constraints>
                     </view>
                     <connections>
@@ -487,6 +494,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJi-42-Jik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6118.840579710145" y="69.642857142857139"/>
+        </scene>
+        <!--Group Owner View Controller-->
+        <scene sceneID="K4C-0G-Zwi">
+            <objects>
+                <viewController id="i0z-9e-6V1" customClass="GroupOwnerViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iS3-Xw-bcY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RVQ-07-oxV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zs-5S-pwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6119" y="746"/>
         </scene>
     </scenes>
     <resources>

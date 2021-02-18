@@ -9,7 +9,6 @@ import UIKit
 
 class LandingViewController: UIViewController {
     
-    let netflix = Groups()
     
     
     override func viewDidLoad() {
@@ -17,7 +16,6 @@ class LandingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        print (netflix.setGroupName(newName: "Netflix fam"))
     }
     
     @IBAction func clickLogin(_ sender: Any) {

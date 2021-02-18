@@ -1,24 +1,18 @@
 //
-//  TestViewController.swift
+//  GroupOwnerViewController.swift
 //  autopay
 //
-//  Created by Waleed E on 2/4/21.
+//  Created by Waleed E on 2/9/21.
 //
 
 import UIKit
 
-class TestViewController: UIViewController {
-    
-    var headerView: UIView!
+class GroupOwnerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        headerView = UIView()
-        headerView.backgroundColor = .red
-        self.view.addSubview(headerView)
     }
     
 

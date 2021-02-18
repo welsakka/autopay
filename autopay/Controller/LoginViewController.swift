@@ -15,7 +15,11 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func clickLogin(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "homeView") as! HomeViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
