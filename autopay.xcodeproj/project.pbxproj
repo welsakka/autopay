@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08680FB8CBB99C8CFDC5099C /* Pods_autopayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE490D1734C1332B37BEBF0B /* Pods_autopayTests.framework */; };
+		7C84D5DD4AB0C37019CBBB47 /* Pods_autopay_autopayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CFA8E31D2A26BDD7A752D8 /* Pods_autopay_autopayUITests.framework */; };
 		7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */; };
 		7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */; };
 		7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */; };
@@ -17,6 +19,7 @@
 		7F4EEA1D25DB77C30035C8E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA1C25DB77C30035C8E1 /* User.swift */; };
 		7F4EEA3025E319570035C8E1 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA2F25E319570035C8E1 /* BankAccount.swift */; };
 		7F4EEA3525E31AF20035C8E1 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */; };
+		7F4EEA4925E61AD10035C8E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */; };
 		7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002D25C27BC700D152D7 /* AppDelegate.swift */; };
 		7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */; };
 		7FCF003525C27BC700D152D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF003325C27BC700D152D7 /* Main.storyboard */; };
@@ -27,6 +30,7 @@
 		7FCF006125C27E2F00D152D7 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF006025C27E2F00D152D7 /* LandingViewController.swift */; };
 		7FCF006625C3C83900D152D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF006525C3C83900D152D7 /* RegisterViewController.swift */; };
 		7FCF006E25C5D99A00D152D7 /* RegisterPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF006D25C5D99A00D152D7 /* RegisterPaymentViewController.swift */; };
+		CAF238C9C03FB645DAB524C4 /* Pods_autopay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF99C76A492D89001E51E76C /* Pods_autopay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		527589E40BEAC593F673F24C /* Pods-autopay-autopayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopay-autopayUITests.debug.xcconfig"; path = "Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		694116EEC22B133700598B57 /* Pods-autopayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopayTests.release.xcconfig"; path = "Target Support Files/Pods-autopayTests/Pods-autopayTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBankViewController.swift; sourceTree = "<group>"; };
 		7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCreditViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,7 @@
 		7F4EEA1C25DB77C30035C8E1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7F4EEA2F25E319570035C8E1 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7FCF002A25C27BC700D152D7 /* autopay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autopay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF002D25C27BC700D152D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +80,13 @@
 		7FCF006025C27E2F00D152D7 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		7FCF006525C3C83900D152D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7FCF006D25C5D99A00D152D7 /* RegisterPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPaymentViewController.swift; sourceTree = "<group>"; };
+		8AE38974A2732DA4DF694BEA /* Pods-autopay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopay.debug.xcconfig"; path = "Target Support Files/Pods-autopay/Pods-autopay.debug.xcconfig"; sourceTree = "<group>"; };
+		9D8734825E0B138AF2E6E46C /* Pods-autopay-autopayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopay-autopayUITests.release.xcconfig"; path = "Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF99C76A492D89001E51E76C /* Pods_autopay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autopay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D239F51B5B39280A702318 /* Pods-autopay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopay.release.xcconfig"; path = "Target Support Files/Pods-autopay/Pods-autopay.release.xcconfig"; sourceTree = "<group>"; };
+		D7CFA8E31D2A26BDD7A752D8 /* Pods_autopay_autopayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autopay_autopayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF0F6C6B6C1E00269273B5D /* Pods-autopayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopayTests.debug.xcconfig"; path = "Target Support Files/Pods-autopayTests/Pods-autopayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE490D1734C1332B37BEBF0B /* Pods_autopayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autopayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF238C9C03FB645DAB524C4 /* Pods_autopay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08680FB8CBB99C8CFDC5099C /* Pods_autopayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +110,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C84D5DD4AB0C37019CBBB47 /* Pods_autopay_autopayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D686E621594F926B0FFF1B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AE38974A2732DA4DF694BEA /* Pods-autopay.debug.xcconfig */,
+				C3D239F51B5B39280A702318 /* Pods-autopay.release.xcconfig */,
+				527589E40BEAC593F673F24C /* Pods-autopay-autopayUITests.debug.xcconfig */,
+				9D8734825E0B138AF2E6E46C /* Pods-autopay-autopayUITests.release.xcconfig */,
+				DDF0F6C6B6C1E00269273B5D /* Pods-autopayTests.debug.xcconfig */,
+				694116EEC22B133700598B57 /* Pods-autopayTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7F4EE9D925C8F3DC0035C8E1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +174,8 @@
 				7FCF004325C27BC900D152D7 /* autopayTests */,
 				7FCF004E25C27BC900D152D7 /* autopayUITests */,
 				7FCF002B25C27BC700D152D7 /* Products */,
+				0D686E621594F926B0FFF1B3 /* Pods */,
+				BEF7465C3F85D74C12581C69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +192,7 @@
 		7FCF002C25C27BC700D152D7 /* autopay */ = {
 			isa = PBXGroup;
 			children = (
+				7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */,
 				7F4EEA0B25D068A20035C8E1 /* Model */,
 				7F4EE9DD25C8F4EE0035C8E1 /* View */,
 				7F4EE9D925C8F3DC0035C8E1 /* Controller */,
@@ -188,6 +222,16 @@
 			path = autopayUITests;
 			sourceTree = "<group>";
 		};
+		BEF7465C3F85D74C12581C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF99C76A492D89001E51E76C /* Pods_autopay.framework */,
+				D7CFA8E31D2A26BDD7A752D8 /* Pods_autopay_autopayUITests.framework */,
+				EE490D1734C1332B37BEBF0B /* Pods_autopayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,17 +239,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FCF005425C27BC900D152D7 /* Build configuration list for PBXNativeTarget "autopay" */;
 			buildPhases = (
+				4F7BA718A0C0F7334FB5B46D /* [CP] Check Pods Manifest.lock */,
 				7FCF002625C27BC700D152D7 /* Sources */,
 				7FCF002725C27BC700D152D7 /* Frameworks */,
 				7FCF002825C27BC700D152D7 /* Resources */,
+				3A384567B4B02BA8C04B99A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = autopay;
-			packageProductDependencies = (
-			);
 			productName = autopay;
 			productReference = 7FCF002A25C27BC700D152D7 /* autopay.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FCF005725C27BC900D152D7 /* Build configuration list for PBXNativeTarget "autopayTests" */;
 			buildPhases = (
+				D0E1EFC14CA150A318FC7A25 /* [CP] Check Pods Manifest.lock */,
 				7FCF003C25C27BC900D152D7 /* Sources */,
 				7FCF003D25C27BC900D152D7 /* Frameworks */,
 				7FCF003E25C27BC900D152D7 /* Resources */,
@@ -232,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FCF005A25C27BC900D152D7 /* Build configuration list for PBXNativeTarget "autopayUITests" */;
 			buildPhases = (
+				02E4FA90BCB4AC82017C2792 /* [CP] Check Pods Manifest.lock */,
 				7FCF004725C27BC900D152D7 /* Sources */,
 				7FCF004825C27BC900D152D7 /* Frameworks */,
 				7FCF004925C27BC900D152D7 /* Resources */,
+				3951433D71B855A6EC81CE69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,8 +324,6 @@
 				Base,
 			);
 			mainGroup = 7FCF002125C27BC700D152D7;
-			packageReferences = (
-			);
 			productRefGroup = 7FCF002B25C27BC700D152D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCF003A25C27BC900D152D7 /* LaunchScreen.storyboard in Resources */,
+				7F4EEA4925E61AD10035C8E1 /* GoogleService-Info.plist in Resources */,
 				7FCF003725C27BC900D152D7 /* Assets.xcassets in Resources */,
 				7FCF003525C27BC700D152D7 /* Main.storyboard in Resources */,
 			);
@@ -316,6 +362,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E4FA90BCB4AC82017C2792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autopay-autopayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3951433D71B855A6EC81CE69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A384567B4B02BA8C04B99A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autopay/Pods-autopay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autopay/Pods-autopay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-autopay/Pods-autopay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F7BA718A0C0F7334FB5B46D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autopay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E1EFC14CA150A318FC7A25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autopayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FCF002625C27BC700D152D7 /* Sources */ = {
@@ -509,6 +658,7 @@
 		};
 		7FCF005525C27BC900D152D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE38974A2732DA4DF694BEA /* Pods-autopay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -528,6 +678,7 @@
 		};
 		7FCF005625C27BC900D152D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3D239F51B5B39280A702318 /* Pods-autopay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -547,6 +698,7 @@
 		};
 		7FCF005825C27BC900D152D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF0F6C6B6C1E00269273B5D /* Pods-autopayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +721,7 @@
 		};
 		7FCF005925C27BC900D152D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694116EEC22B133700598B57 /* Pods-autopayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -591,6 +744,7 @@
 		};
 		7FCF005B25C27BC900D152D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527589E40BEAC593F673F24C /* Pods-autopay-autopayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,6 +765,7 @@
 		};
 		7FCF005C25C27BC900D152D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8734825E0B138AF2E6E46C /* Pods-autopay-autopayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
