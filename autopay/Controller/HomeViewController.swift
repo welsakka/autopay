@@ -21,6 +21,11 @@ class HomeViewController: UIViewController {
          return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
     }
     
+    @objc func buttonAction(sender: UIButton!) {
+        let vc = storyboard?.instantiateViewController(identifier: "groupOwnerView") as! GroupOwnerViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +35,8 @@ class HomeViewController: UIViewController {
         let netflix = Group()
         let rent = Group()
         
-        netflix.setGroupName(newName: "Netflix fam")
-        rent.setGroupName(newName: "Rodney's tribute")
+        netflix.groupName = "Netflix fam"
+        rent.groupName = "Rodney's tribute"
         
         groupsArr.append(netflix)
         groupsArr.append(rent)
@@ -41,6 +46,8 @@ class HomeViewController: UIViewController {
             button.setTitle(group.groupName, for: .normal)
             button.backgroundColor = getRandomColor()
             GroupsStackView.addArrangedSubview(button)
+            button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+            
         }
 
         GroupsStackView.distribution = .fillEqually
@@ -48,15 +55,5 @@ class HomeViewController: UIViewController {
         
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

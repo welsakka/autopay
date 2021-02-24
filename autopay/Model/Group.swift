@@ -8,13 +8,11 @@
 import Foundation
 
 class Group {
-    var groupName : String = ""
+    var groupName: String?
+    var isGroupOwner: Bool?
+    //groupMembers perhaps will have the unique id's of users
+    var groupMembers: [String]?
     
-    func getGroupName() -> String{ return groupName }
-    func setGroupName(newName : String) -> String {
-        groupName = newName
-        return groupName
-    }
 }
 
 

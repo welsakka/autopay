@@ -498,17 +498,73 @@
         <!--Group Owner View Controller-->
         <scene sceneID="K4C-0G-Zwi">
             <objects>
-                <viewController id="i0z-9e-6V1" customClass="GroupOwnerViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="groupOwnerView" id="i0z-9e-6V1" customClass="GroupOwnerViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iS3-Xw-bcY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qN7-HB-VqF">
+                                <rect key="frame" x="182.5" y="154" width="49.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$xx.xx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zw-Ik-14K">
+                                <rect key="frame" x="157.5" y="184" width="99.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Payment On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-jP-IoX">
+                                <rect key="frame" x="117" y="262" width="180.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;next scheduled date&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEd-Hm-n9a">
+                                <rect key="frame" x="29.5" y="292" width="355" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G9-Km-qfB">
+                                <rect key="frame" x="26" y="424" width="98" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpX-DL-RWJ">
+                                <rect key="frame" x="20" y="64" width="168.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-mM-IHQ">
+                                <rect key="frame" x="30" y="490" width="355" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RVQ-07-oxV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hhB-jP-IoX" firstAttribute="top" secondItem="4zw-Ik-14K" secondAttribute="bottom" constant="35" id="05G-Dt-7ve"/>
+                            <constraint firstItem="qN7-HB-VqF" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="110" id="2OI-iR-s4x"/>
+                            <constraint firstItem="9G9-Km-qfB" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="380" id="9hq-NS-Gjd"/>
+                            <constraint firstItem="JpX-DL-RWJ" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="20" id="CWx-D9-4ts"/>
+                            <constraint firstItem="9G9-Km-qfB" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="26" id="HBv-ja-WHw"/>
+                            <constraint firstItem="hEd-Hm-n9a" firstAttribute="top" secondItem="hhB-jP-IoX" secondAttribute="bottom" constant="1" id="WYc-DN-gi2"/>
+                            <constraint firstItem="hhB-jP-IoX" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="faI-jv-7UP"/>
+                            <constraint firstItem="qN7-HB-VqF" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="g4E-VV-aPi"/>
+                            <constraint firstItem="4zw-Ik-14K" firstAttribute="top" secondItem="qN7-HB-VqF" secondAttribute="bottom" constant="1" id="nWS-qg-Vu8"/>
+                            <constraint firstItem="JpX-DL-RWJ" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="20" id="pMo-mX-ZHv"/>
+                            <constraint firstItem="hEd-Hm-n9a" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="wFl-5j-U54"/>
+                            <constraint firstItem="4zw-Ik-14K" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="wfX-F1-yNq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zs-5S-pwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6119" y="746"/>
+            <point key="canvasLocation" x="6118.840579710145" y="745.98214285714278"/>
         </scene>
     </scenes>
     <resources>
