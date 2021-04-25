@@ -14,7 +14,7 @@
 		7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */; };
 		7F4EE9FA25CA450A0035C8E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F925CA450A0035C8E1 /* LoginViewController.swift */; };
 		7F4EEA0725D068670035C8E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA0625D068670035C8E1 /* HomeViewController.swift */; };
-		7F4EEA0D25D068DF0035C8E1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA0C25D068DF0035C8E1 /* Group.swift */; };
+		7F4EEA0D25D068DF0035C8E1 /* RecurringPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA0C25D068DF0035C8E1 /* RecurringPayment.swift */; };
 		7F4EEA1825D392310035C8E1 /* GroupOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA1725D392310035C8E1 /* GroupOwnerViewController.swift */; };
 		7F4EEA1D25DB77C30035C8E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA1C25DB77C30035C8E1 /* User.swift */; };
 		7F4EEA3025E319570035C8E1 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA2F25E319570035C8E1 /* BankAccount.swift */; };
@@ -61,7 +61,7 @@
 		7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCreditViewController.swift; sourceTree = "<group>"; };
 		7F4EE9F925CA450A0035C8E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7F4EEA0625D068670035C8E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		7F4EEA0C25D068DF0035C8E1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		7F4EEA0C25D068DF0035C8E1 /* RecurringPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringPayment.swift; sourceTree = "<group>"; };
 		7F4EEA1725D392310035C8E1 /* GroupOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupOwnerViewController.swift; sourceTree = "<group>"; };
 		7F4EEA1C25DB77C30035C8E1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7F4EEA2F25E319570035C8E1 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		7F4EEA0B25D068A20035C8E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7F4EEA0C25D068DF0035C8E1 /* Group.swift */,
+				7F4EEA0C25D068DF0035C8E1 /* RecurringPayment.swift */,
 				7F4EEA1C25DB77C30035C8E1 /* User.swift */,
 				7F4EEA2F25E319570035C8E1 /* BankAccount.swift */,
 				7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */,
@@ -496,7 +496,7 @@
 				7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */,
 				7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */,
 				7FAC8A61262E6EA600F9222A /* GroupMemberViewController.swift in Sources */,
-				7F4EEA0D25D068DF0035C8E1 /* Group.swift in Sources */,
+				7F4EEA0D25D068DF0035C8E1 /* RecurringPayment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

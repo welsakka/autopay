@@ -10,14 +10,14 @@ import Foundation
 /*
  A user's metadata
  */
-class User {
+public class User {
     var username: String?
     //find a better data type than string for id's
     var id: UUID?
     var firstName: String?
     var lastName: String?
     var profilePicture: String?
-    var groups: [Group]?
+    var recurringPayments: [RecurringPayment] = []
     //var bankAccounts: [bankAccount]?
     //var creditCards: [creditCard]?
         

@@ -565,7 +565,7 @@
                                 <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
-                                    <action selector="CreateGroupButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="o7Y-89-mrd"/>
+                                    <action selector="CreateRecurringPaymentButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="ttc-1z-ZEr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -585,6 +585,10 @@
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="centerY" secondItem="WIq-cP-TyF" secondAttribute="centerY" id="sQT-Nt-Q0Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="RecurringPaymentName" destination="Fib-pi-bN9" id="qYN-mI-cup"/>
+                        <outlet property="RecurringPaymentType" destination="Whj-db-16J" id="vpo-nS-132"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKA-7d-Q9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

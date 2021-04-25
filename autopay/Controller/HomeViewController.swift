@@ -7,11 +7,12 @@
 
 import UIKit
 
+public var user1 = User()
+
 class HomeViewController: UIViewController {
     
     @IBOutlet var GroupsStackView: UIStackView!
     @IBOutlet var AddGroupButton: UIButton!
-    var groupsArr : [Group] = []
     
     func getRandomColor() -> UIColor {
          //Generate between 0 to 1
@@ -35,27 +36,15 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//
-//        let netflix = Group()
-//        let rent = Group()
-//
-//        netflix.groupName = "Netflix fam"
-//        rent.groupName = "Rodney's tribute"
-//
-//        groupsArr.append(netflix)
-//        groupsArr.append(rent)
-//
         
-//        Create User and add the Users groups to the stack view
-        let user1 = User()
+//      Create User and add the Users groups to the stack view
         user1.username = "MortyIsArmin"
         user1.id = UUID()
         user1.firstName = "Waleed"
         
-        for group in groupsArr {
+        for payment in user1.recurringPayments {
             let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-            button.setTitle(group.groupName, for: .normal)
+            button.setTitle(payment.name, for: .normal)
             button.backgroundColor = getRandomColor()
             GroupsStackView.addArrangedSubview(button)
             button.addTarget(self, action: #selector(buttonActionToGroupView), for: .touchUpInside)
