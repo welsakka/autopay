@@ -19,6 +19,8 @@ class LandingViewController: UIViewController {
     }
     
     @IBAction func clickLogin(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "loginView") as! LoginViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func clickRegister(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "register") as! RegisterViewController

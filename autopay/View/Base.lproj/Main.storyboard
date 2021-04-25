@@ -504,70 +504,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create New Recurring Payment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-aa-MTW">
-                                <rect key="frame" x="30" y="59" width="322" height="106"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Recurring Payment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-aa-MTW">
+                                <rect key="frame" x="30" y="69" width="354" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="v74-r5-VhV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Group name" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-pi-bN9">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Group name" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-pi-bN9">
                                 <rect key="frame" x="25" y="266" width="364" height="34"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Add Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-Pn-R6n">
-                                <rect key="frame" x="20" y="352" width="199" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-Pn-R6n">
+                                <rect key="frame" x="30" y="352" width="199" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recurring Payment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-OC-gKQ">
-                                <rect key="frame" x="20" y="211" width="328" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-OC-gKQ">
+                                <rect key="frame" x="30" y="211" width="328" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-jT-Txz">
-                                <rect key="frame" x="44" y="426" width="294" height="80"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-jT-Txz">
+                                <rect key="frame" x="60" y="420" width="294" height="86"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recurring Payment Frequency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-nu-aFZ">
-                                <rect key="frame" x="20" y="514" width="387" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Frequency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-nu-aFZ">
+                                <rect key="frame" x="30" y="514" width="387" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Ac-IQM">
-                                <rect key="frame" x="179" y="682" width="46" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Frequency in Days" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-gt-KLK">
+                                <rect key="frame" x="25" y="582" width="364" height="34"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Ac-IQM">
+                                <rect key="frame" x="184" y="716" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
                                 <connections>
                                     <action selector="CreateRecurringPaymentButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="ttc-1z-ZEr"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Frequency in Days" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-gt-KLK">
-                                <rect key="frame" x="25" y="582" width="364" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y36-JW-imm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Fib-pi-bN9" firstAttribute="top" secondItem="WIq-cP-TyF" secondAttribute="top" constant="266" id="38U-Po-Y98"/>
+                            <constraint firstAttribute="trailing" secondItem="1fI-nu-aFZ" secondAttribute="trailing" constant="-3" id="60g-LN-ck2"/>
+                            <constraint firstItem="QuI-Pn-R6n" firstAttribute="top" secondItem="Fib-pi-bN9" secondAttribute="bottom" constant="52" id="9b4-Qu-see"/>
                             <constraint firstItem="QuI-Pn-R6n" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="30" id="CoR-Gc-3FY"/>
+                            <constraint firstItem="Thd-OC-gKQ" firstAttribute="leading" secondItem="QuI-Pn-R6n" secondAttribute="leading" id="D3Q-gI-m7B"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="uL3-jT-Txz" secondAttribute="trailing" constant="60" id="FS9-RD-ud0"/>
-                            <constraint firstItem="MLi-aa-MTW" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="25" id="FW0-Nm-B1B"/>
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Hsp-wo-1lR"/>
+                            <constraint firstItem="MLi-aa-MTW" firstAttribute="centerX" secondItem="uL3-jT-Txz" secondAttribute="centerX" id="JNU-eA-ihm"/>
+                            <constraint firstItem="ud6-gt-KLK" firstAttribute="top" secondItem="1fI-nu-aFZ" secondAttribute="bottom" constant="32" id="LLt-J2-hw1"/>
+                            <constraint firstItem="y36-JW-imm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Thd-OC-gKQ" secondAttribute="trailing" symbolic="YES" id="SYh-HG-scy"/>
                             <constraint firstItem="uL3-jT-Txz" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="60" id="SpY-NA-bJG"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="QuI-Pn-R6n" secondAttribute="trailing" constant="185" id="Ue7-tw-R3r"/>
+                            <constraint firstAttribute="bottom" secondItem="ud6-gt-KLK" secondAttribute="bottom" constant="280" id="YLI-4R-WkP"/>
+                            <constraint firstItem="Fib-pi-bN9" firstAttribute="top" secondItem="Thd-OC-gKQ" secondAttribute="bottom" constant="19" id="Z7h-it-ewd"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="Fib-pi-bN9" secondAttribute="trailing" constant="25" id="ak0-tN-PtT"/>
                             <constraint firstItem="MLi-aa-MTW" firstAttribute="top" secondItem="y36-JW-imm" secondAttribute="top" constant="25" id="c9h-tq-0da"/>
                             <constraint firstItem="Fib-pi-bN9" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="25" id="cDb-4p-WCf"/>
                             <constraint firstItem="uL3-jT-Txz" firstAttribute="top" secondItem="QuI-Pn-R6n" secondAttribute="bottom" constant="32" id="e5S-08-X5q"/>
-                            <constraint firstItem="knc-Ac-IQM" firstAttribute="centerY" secondItem="WIq-cP-TyF" secondAttribute="centerY" id="sQT-Nt-Q0Q"/>
+                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="top" secondItem="uL3-jT-Txz" secondAttribute="bottom" constant="8" symbolic="YES" id="fJP-rE-xVH"/>
+                            <constraint firstItem="Thd-OC-gKQ" firstAttribute="leading" secondItem="1fI-nu-aFZ" secondAttribute="leading" id="o1y-4j-bUb"/>
+                            <constraint firstItem="MLi-aa-MTW" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="30" id="p3H-v3-ng9"/>
+                            <constraint firstItem="Fib-pi-bN9" firstAttribute="trailing" secondItem="ud6-gt-KLK" secondAttribute="trailing" id="vi1-mj-H1v"/>
+                            <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="ud6-gt-KLK" secondAttribute="bottom" constant="100" id="weK-EQ-QFu"/>
+                            <constraint firstItem="Fib-pi-bN9" firstAttribute="leading" secondItem="ud6-gt-KLK" secondAttribute="leading" id="yhM-pd-CWP"/>
                         </constraints>
                     </view>
                     <connections>
