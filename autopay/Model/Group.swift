@@ -7,12 +7,14 @@
 
 import Foundation
 
+//Rename to Recurring Payment?
 class Group {
     var groupName: String?
-    //groupOwner is unique id
-    var groupOwner: String?
-    //groupMembers perhaps will have the unique id's of users, to reference user info
-    var groupMembers: [String]?
+    var groupCreator: String?
+    var groupID: UUID?
+    var groupMembers: [Member]?
+    //frequency in days
+    var paymentFrequency: Int?
 }
 
 

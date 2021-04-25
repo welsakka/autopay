@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		7F4EEA3025E319570035C8E1 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA2F25E319570035C8E1 /* BankAccount.swift */; };
 		7F4EEA3525E31AF20035C8E1 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */; };
 		7F4EEA4925E61AD10035C8E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */; };
+		7FAC8A61262E6EA600F9222A /* GroupMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A60262E6EA600F9222A /* GroupMemberViewController.swift */; };
+		7FAC8A66262E7C2D00F9222A /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A65262E7C2D00F9222A /* CreateGroupViewController.swift */; };
+		7FAC8A83263293C800F9222A /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A82263293C800F9222A /* Member.swift */; };
 		7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002D25C27BC700D152D7 /* AppDelegate.swift */; };
 		7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */; };
 		7FCF003525C27BC700D152D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF003325C27BC700D152D7 /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		7F4EEA2F25E319570035C8E1 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7FAC8A60262E6EA600F9222A /* GroupMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMemberViewController.swift; sourceTree = "<group>"; };
+		7FAC8A65262E7C2D00F9222A /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		7FAC8A82263293C800F9222A /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		7FCF002A25C27BC700D152D7 /* autopay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autopay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF002D25C27BC700D152D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,7 +133,6 @@
 				DDF0F6C6B6C1E00269273B5D /* Pods-autopayTests.debug.xcconfig */,
 				694116EEC22B133700598B57 /* Pods-autopayTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +148,8 @@
 				7F4EE9F925CA450A0035C8E1 /* LoginViewController.swift */,
 				7F4EEA0625D068670035C8E1 /* HomeViewController.swift */,
 				7F4EEA1725D392310035C8E1 /* GroupOwnerViewController.swift */,
+				7FAC8A60262E6EA600F9222A /* GroupMemberViewController.swift */,
+				7FAC8A65262E7C2D00F9222A /* CreateGroupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				7F4EEA1C25DB77C30035C8E1 /* User.swift */,
 				7F4EEA2F25E319570035C8E1 /* BankAccount.swift */,
 				7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */,
+				7FAC8A82263293C800F9222A /* Member.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,7 +251,7 @@
 				7FCF002625C27BC700D152D7 /* Sources */,
 				7FCF002725C27BC700D152D7 /* Frameworks */,
 				7FCF002825C27BC700D152D7 /* Resources */,
-				3A384567B4B02BA8C04B99A1 /* [CP] Embed Pods Frameworks */,
+				0F46EA906BD6BEF77507F0E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +289,7 @@
 				7FCF004725C27BC900D152D7 /* Sources */,
 				7FCF004825C27BC900D152D7 /* Frameworks */,
 				7FCF004925C27BC900D152D7 /* Resources */,
-				3951433D71B855A6EC81CE69 /* [CP] Embed Pods Frameworks */,
+				6B80C8D8A94266A85B5CA33F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,24 +394,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3951433D71B855A6EC81CE69 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3A384567B4B02BA8C04B99A1 /* [CP] Embed Pods Frameworks */ = {
+		0F46EA906BD6BEF77507F0E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,6 +433,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6B80C8D8A94266A85B5CA33F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-autopay-autopayUITests/Pods-autopay-autopayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D0E1EFC14CA150A318FC7A25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,14 +485,17 @@
 				7FCF006125C27E2F00D152D7 /* LandingViewController.swift in Sources */,
 				7FCF006625C3C83900D152D7 /* RegisterViewController.swift in Sources */,
 				7F4EEA3025E319570035C8E1 /* BankAccount.swift in Sources */,
+				7FAC8A66262E7C2D00F9222A /* CreateGroupViewController.swift in Sources */,
 				7F4EEA3525E31AF20035C8E1 /* CreditCard.swift in Sources */,
 				7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */,
 				7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */,
 				7F4EEA0725D068670035C8E1 /* HomeViewController.swift in Sources */,
 				7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */,
 				7F4EEA1825D392310035C8E1 /* GroupOwnerViewController.swift in Sources */,
+				7FAC8A83263293C800F9222A /* Member.swift in Sources */,
 				7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */,
 				7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */,
+				7FAC8A61262E6EA600F9222A /* GroupMemberViewController.swift in Sources */,
 				7F4EEA0D25D068DF0035C8E1 /* Group.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
