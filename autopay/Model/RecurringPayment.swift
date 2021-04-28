@@ -7,7 +7,11 @@
 
 import Foundation
 
-//Rename to Recurring Payment?
+/*
+ A model to describe a recurring payment and all the participants in the recurring
+ payment.
+ 
+ */
 class RecurringPayment {
     var name: String?
     var creator: String?
