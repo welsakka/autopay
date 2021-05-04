@@ -17,9 +17,10 @@ class CreateGroupAddMemberViewController: UIViewController {
     @IBAction func AddMemberButton(_ sender: Any) {
         let label = UILabel()
         label.text = AddMemberText.text
+        label.textColor = .black
         delegate?.addMemberToStack(member: label)
-        let vc = storyboard?.instantiateViewController(identifier: "createGroupView") as! CreateGroupViewController
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.popViewController(animated: true)
+
     }
     
 

@@ -13,13 +13,12 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate {
     @IBOutlet var MembersStack: UIStackView!
     
     @IBAction func AddMemberButton(_ sender: Any) {
-        
         let vc = storyboard?.instantiateViewController(identifier: "addMemberView") as! CreateGroupAddMemberViewController
+        vc.delegate = self
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func CreateRecurringPaymentButton(_ sender: Any) {
-        
         user1.recurringPayments.append(CreateRecurringPayment())
         
         let vc = storyboard?.instantiateViewController(identifier: "homeView") as! HomeViewController
