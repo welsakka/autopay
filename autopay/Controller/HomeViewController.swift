@@ -9,6 +9,7 @@ import UIKit
 
 public var user1 = User()
 
+
 class HomeViewController: UIViewController {
     
     @IBOutlet var GroupsStackView: UIStackView!

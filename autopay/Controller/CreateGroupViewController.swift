@@ -7,10 +7,17 @@
 
 import UIKit
 
-class CreateGroupViewController: UIViewController {
+class CreateGroupViewController: UIViewController, AddMemberDelegate {
     
     @IBOutlet var RecurringPaymentName: UITextField!
-
+    @IBOutlet var MembersStack: UIStackView!
+    
+    @IBAction func AddMemberButton(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "addMemberView") as! CreateGroupAddMemberViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     @IBAction func CreateRecurringPaymentButton(_ sender: Any) {
         
         user1.recurringPayments.append(CreateRecurringPayment())
@@ -45,9 +52,11 @@ class CreateGroupViewController: UIViewController {
         return newMembersArr
     }
     
+    func addMemberToStack(member: UILabel) {
+        MembersStack.addArrangedSubview(member)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-                
     }
-
 }
