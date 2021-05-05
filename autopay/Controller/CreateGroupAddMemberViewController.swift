@@ -10,10 +10,9 @@ import UIKit
 class CreateGroupAddMemberViewController: UIViewController {
     
     var delegate:AddMemberDelegate?
-    
-    var text: String?
     @IBOutlet var AddMemberText: UITextField!
     
+    //Return data to CreateGroupViewController
     @IBAction func AddMemberButton(_ sender: Any) {
         let label = UILabel()
         label.text = AddMemberText.text
@@ -24,6 +23,5 @@ class CreateGroupAddMemberViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        text = AddMemberText.text
     }
 }

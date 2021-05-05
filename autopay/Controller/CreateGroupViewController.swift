@@ -35,7 +35,9 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate {
         newRecurringPayment.id = UUID()
         newRecurringPayment.name = name
         newRecurringPayment.creator = user1.username
-        newRecurringPayment.members = CreateMembersForNewRecurringPayment()
+        for member in MembersStack.arrangedSubviews as [UILabel] {
+            newRecurringPayment.members.append(member.text)
+        }
         
         return newRecurringPayment
     }

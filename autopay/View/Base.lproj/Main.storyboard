@@ -19,7 +19,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-Iq-9AH">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTZ-6J-9TL">
                                 <rect key="frame" x="230" y="768" width="124" height="54"/>
@@ -618,19 +618,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="venmo username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWo-bJ-Wpd">
-                                <rect key="frame" x="137.5" y="431" width="139" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Venmo Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWo-bJ-Wpd">
+                                <rect key="frame" x="100" y="431" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input the member's venmo username!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ws-kC-5M7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount To Send?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbA-gY-VNf">
+                                <rect key="frame" x="100" y="549" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input the member's venmo username and info!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ws-kC-5M7">
                                 <rect key="frame" x="55" y="310.5" width="304.5" height="62.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb4-7p-Nr9">
-                                <rect key="frame" x="160" y="509" width="94" height="22"/>
+                                <rect key="frame" x="160" y="654" width="94" height="22"/>
                                 <state key="normal" title="Add!?!?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <imageReference key="backgroundImage" image="rectangle.fill" catalog="system" symbolScale="large" renderingMode="template"/>
@@ -639,21 +644,33 @@
                                     <action selector="AddMemberButton:" destination="4WM-lB-oHp" eventType="touchUpInside" id="BtA-qy-mUo"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sending Payment To?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-E1-w70">
+                                <rect key="frame" x="100" y="490" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Vr-wz-5Ma"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yb4-7p-Nr9" firstAttribute="leading" secondItem="0Vr-wz-5Ma" secondAttribute="leading" constant="160" id="68s-jr-Qp1"/>
+                            <constraint firstItem="yb4-7p-Nr9" firstAttribute="centerX" secondItem="EbA-gY-VNf" secondAttribute="centerX" id="9fO-Z5-8tn"/>
                             <constraint firstItem="QWo-bJ-Wpd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Vr-wz-5Ma" secondAttribute="leading" id="APH-cR-EsQ"/>
-                            <constraint firstItem="0Vr-wz-5Ma" firstAttribute="trailing" secondItem="yb4-7p-Nr9" secondAttribute="trailing" constant="160" id="QnU-WX-x39"/>
+                            <constraint firstItem="0Vr-wz-5Ma" firstAttribute="trailing" secondItem="QWo-bJ-Wpd" secondAttribute="trailing" constant="100" id="Co7-ZQ-oMF"/>
+                            <constraint firstItem="F7Y-E1-w70" firstAttribute="leading" secondItem="0Vr-wz-5Ma" secondAttribute="leading" constant="100" id="D4L-hL-OIb"/>
+                            <constraint firstItem="F7Y-E1-w70" firstAttribute="top" secondItem="QWo-bJ-Wpd" secondAttribute="bottom" constant="25" id="DCi-6h-1Fs"/>
+                            <constraint firstItem="yb4-7p-Nr9" firstAttribute="top" secondItem="EbA-gY-VNf" secondAttribute="bottom" constant="72" id="MoP-zw-UCr"/>
+                            <constraint firstItem="0Vr-wz-5Ma" firstAttribute="trailing" secondItem="F7Y-E1-w70" secondAttribute="trailing" constant="100" id="OC0-yS-PU0"/>
+                            <constraint firstItem="EbA-gY-VNf" firstAttribute="leading" secondItem="0Vr-wz-5Ma" secondAttribute="leading" constant="100" id="Qqt-fE-z29"/>
                             <constraint firstItem="0Vr-wz-5Ma" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QWo-bJ-Wpd" secondAttribute="trailing" id="Tv8-R6-Vxm"/>
-                            <constraint firstItem="yb4-7p-Nr9" firstAttribute="leading" secondItem="0Vr-wz-5Ma" secondAttribute="leading" constant="160" id="YYg-nC-MeP"/>
-                            <constraint firstItem="yb4-7p-Nr9" firstAttribute="centerX" secondItem="Aa2-0F-jG3" secondAttribute="centerX" id="d0z-zA-wde"/>
                             <constraint firstItem="9Ws-kC-5M7" firstAttribute="centerX" secondItem="Aa2-0F-jG3" secondAttribute="centerX" id="elq-4w-Xqv"/>
-                            <constraint firstItem="yb4-7p-Nr9" firstAttribute="top" secondItem="QWo-bJ-Wpd" secondAttribute="bottom" constant="45" id="hOG-wY-obE"/>
+                            <constraint firstItem="QWo-bJ-Wpd" firstAttribute="leading" secondItem="0Vr-wz-5Ma" secondAttribute="leading" constant="100" id="iC2-p1-cnj"/>
                             <constraint firstItem="9Ws-kC-5M7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Vr-wz-5Ma" secondAttribute="leading" id="ksN-5i-yES"/>
                             <constraint firstItem="0Vr-wz-5Ma" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Ws-kC-5M7" secondAttribute="trailing" id="nr7-6y-MCE"/>
+                            <constraint firstItem="EbA-gY-VNf" firstAttribute="top" secondItem="F7Y-E1-w70" secondAttribute="bottom" constant="25" id="qMR-Eb-8aM"/>
                             <constraint firstItem="9Ws-kC-5M7" firstAttribute="top" secondItem="0Vr-wz-5Ma" secondAttribute="top" constant="266.5" id="rSY-vq-Gbn"/>
                             <constraint firstItem="QWo-bJ-Wpd" firstAttribute="centerY" secondItem="Aa2-0F-jG3" secondAttribute="centerY" id="x7H-5d-FKg"/>
+                            <constraint firstItem="0Vr-wz-5Ma" firstAttribute="trailing" secondItem="EbA-gY-VNf" secondAttribute="trailing" constant="100" id="xtT-vI-dmL"/>
                             <constraint firstItem="QWo-bJ-Wpd" firstAttribute="centerX" secondItem="Aa2-0F-jG3" secondAttribute="centerX" id="yHR-rf-3yI"/>
                         </constraints>
                     </view>
@@ -828,9 +845,6 @@
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
