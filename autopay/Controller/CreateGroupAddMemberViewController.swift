@@ -20,10 +20,8 @@ class CreateGroupAddMemberViewController: UIViewController {
         label.textColor = .black
         delegate?.addMemberToStack(member: label)
         navigationController?.popViewController(animated: true)
-
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         text = AddMemberText.text
