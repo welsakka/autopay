@@ -445,8 +445,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Recurring Payments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-hX-HQh">
-                                <rect key="frame" x="25" y="69" width="227" height="89"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Recurring Payments" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-hX-HQh">
+                                <rect key="frame" x="25" y="69" width="218" height="88.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -505,7 +505,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Recurring Payment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-aa-MTW">
-                                <rect key="frame" x="30" y="69" width="354" height="106"/>
+                                <rect key="frame" x="57.5" y="69" width="299" height="106"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="106" id="v74-r5-VhV"/>
                                 </constraints>
@@ -561,38 +561,41 @@
                                     <action selector="AddMemberButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="XBl-9V-IPh"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-jT-Txz">
-                                <rect key="frame" x="60" y="420" width="294" height="87"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-jT-Txz">
+                                <rect key="frame" x="60" y="396" width="294" height="87"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y36-JW-imm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MLi-aa-MTW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WIq-cP-TyF" secondAttribute="leading" id="0R1-JL-Jzk"/>
                             <constraint firstItem="Fib-pi-bN9" firstAttribute="top" secondItem="WIq-cP-TyF" secondAttribute="top" constant="266" id="38U-Po-Y98"/>
                             <constraint firstAttribute="trailing" secondItem="1fI-nu-aFZ" secondAttribute="trailing" constant="-3" id="60g-LN-ck2"/>
                             <constraint firstItem="QuI-Pn-R6n" firstAttribute="top" secondItem="Fib-pi-bN9" secondAttribute="bottom" constant="52" id="9b4-Qu-see"/>
+                            <constraint firstItem="Thd-OC-gKQ" firstAttribute="top" secondItem="MLi-aa-MTW" secondAttribute="bottom" constant="36" id="A2E-Nj-FRj"/>
                             <constraint firstItem="QuI-Pn-R6n" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="30" id="CoR-Gc-3FY"/>
                             <constraint firstItem="Thd-OC-gKQ" firstAttribute="leading" secondItem="QuI-Pn-R6n" secondAttribute="leading" id="D3Q-gI-m7B"/>
+                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="top" secondItem="uL3-jT-Txz" secondAttribute="bottom" constant="32" id="E8F-Sj-KK4"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="uL3-jT-Txz" secondAttribute="trailing" constant="60" id="FS9-RD-ud0"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="Ypj-aG-VT0" secondAttribute="trailing" constant="155" id="HHy-t1-HVi"/>
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Hsp-wo-1lR"/>
                             <constraint firstItem="Ypj-aG-VT0" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="219" id="INh-0Z-hto"/>
-                            <constraint firstItem="MLi-aa-MTW" firstAttribute="centerX" secondItem="uL3-jT-Txz" secondAttribute="centerX" id="JNU-eA-ihm"/>
                             <constraint firstItem="Ypj-aG-VT0" firstAttribute="top" secondItem="Fib-pi-bN9" secondAttribute="bottom" constant="49" id="JYg-HR-3bB"/>
+                            <constraint firstItem="uL3-jT-Txz" firstAttribute="top" secondItem="QuI-Pn-R6n" secondAttribute="bottom" constant="8" id="Jb4-7x-2Pi"/>
+                            <constraint firstItem="MLi-aa-MTW" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Jzu-AF-QfE"/>
                             <constraint firstItem="ud6-gt-KLK" firstAttribute="top" secondItem="1fI-nu-aFZ" secondAttribute="bottom" constant="32" id="LLt-J2-hw1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MLi-aa-MTW" secondAttribute="trailing" id="S8q-97-tTQ"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Thd-OC-gKQ" secondAttribute="trailing" symbolic="YES" id="SYh-HG-scy"/>
                             <constraint firstItem="uL3-jT-Txz" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="60" id="SpY-NA-bJG"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="QuI-Pn-R6n" secondAttribute="trailing" constant="185" id="Ue7-tw-R3r"/>
                             <constraint firstAttribute="bottom" secondItem="ud6-gt-KLK" secondAttribute="bottom" constant="280" id="YLI-4R-WkP"/>
                             <constraint firstItem="Fib-pi-bN9" firstAttribute="top" secondItem="Thd-OC-gKQ" secondAttribute="bottom" constant="19" id="Z7h-it-ewd"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="Fib-pi-bN9" secondAttribute="trailing" constant="25" id="ak0-tN-PtT"/>
-                            <constraint firstItem="uL3-jT-Txz" firstAttribute="top" secondItem="Ypj-aG-VT0" secondAttribute="bottom" constant="29" id="bzu-yo-wwN"/>
                             <constraint firstItem="MLi-aa-MTW" firstAttribute="top" secondItem="y36-JW-imm" secondAttribute="top" constant="25" id="c9h-tq-0da"/>
                             <constraint firstItem="Fib-pi-bN9" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="25" id="cDb-4p-WCf"/>
-                            <constraint firstItem="uL3-jT-Txz" firstAttribute="top" secondItem="QuI-Pn-R6n" secondAttribute="bottom" constant="32" id="e5S-08-X5q"/>
-                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="top" secondItem="uL3-jT-Txz" secondAttribute="bottom" constant="8" symbolic="YES" id="fJP-rE-xVH"/>
                             <constraint firstItem="Thd-OC-gKQ" firstAttribute="leading" secondItem="1fI-nu-aFZ" secondAttribute="leading" id="o1y-4j-bUb"/>
-                            <constraint firstItem="MLi-aa-MTW" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="30" id="p3H-v3-ng9"/>
                             <constraint firstItem="Fib-pi-bN9" firstAttribute="trailing" secondItem="ud6-gt-KLK" secondAttribute="trailing" id="vi1-mj-H1v"/>
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="ud6-gt-KLK" secondAttribute="bottom" constant="100" id="weK-EQ-QFu"/>
                             <constraint firstItem="Fib-pi-bN9" firstAttribute="leading" secondItem="ud6-gt-KLK" secondAttribute="leading" id="yhM-pd-CWP"/>
@@ -830,6 +833,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
