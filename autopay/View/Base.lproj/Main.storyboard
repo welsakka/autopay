@@ -626,7 +626,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount To Send?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbA-gY-VNf">
                                 <rect key="frame" x="100" y="549" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input the member's venmo username and info!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ws-kC-5M7">
                                 <rect key="frame" x="55" y="310.5" width="304.5" height="62.5"/>
@@ -675,7 +675,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="AddMemberText" destination="QWo-bJ-Wpd" id="Jrz-bb-3yi"/>
+                        <outlet property="amount" destination="EbA-gY-VNf" id="wOy-Fd-L1U"/>
+                        <outlet property="sendingPaymentTo" destination="F7Y-E1-w70" id="6xN-gF-wVw"/>
+                        <outlet property="username" destination="QWo-bJ-Wpd" id="iKR-Hp-amF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rZ-ia-Yns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

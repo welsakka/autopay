@@ -11,6 +11,7 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate {
     
     @IBOutlet var RecurringPaymentName: UITextField!
     @IBOutlet var MembersStack: UIStackView!
+    var memberArr: [Member] = []
     
     //Function for when the user wants to add a member to the Rec.Pay.
     @IBAction func AddMemberButton(_ sender: Any) {
@@ -35,29 +36,17 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate {
         newRecurringPayment.id = UUID()
         newRecurringPayment.name = name
         newRecurringPayment.creator = user1.username
-        for member in MembersStack.arrangedSubviews as [UILabel] {
-            newRecurringPayment.members.append(member.text)
+        for member in memberArr {
+            newRecurringPayment.members.append(member)
         }
         
         return newRecurringPayment
     }
     
-    //Helper Function for creating new members and adding them to the
-    //new recurring payment's member list
-    func CreateMembersForNewRecurringPayment() -> [Member] {
-        var newMembersArr: [Member] = []
-        //Add user who created recurring payment
-        let creatorMember = Member()
-        creatorMember.memberName = "sample"
-        creatorMember.memberID = UUID()
-        newMembersArr.append(creatorMember)
-        
-        return newMembersArr
-    }
-    
     //delegate function to add member to Rec.Pay.
-    func addMemberToStack(member: UILabel) {
-        MembersStack.addArrangedSubview(member)
+    func addMemberToStack(label: UILabel, member: Member) {
+        MembersStack.addArrangedSubview(label)
+        memberArr.append(member)
     }
     
     override func viewDidLoad() {

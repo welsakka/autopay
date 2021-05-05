@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 protocol AddMemberDelegate {
-    func addMemberToStack(member: UILabel)
+    func addMemberToStack(label: UILabel, member: Member)
 }

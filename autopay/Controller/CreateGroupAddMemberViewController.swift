@@ -10,14 +10,22 @@ import UIKit
 class CreateGroupAddMemberViewController: UIViewController {
     
     var delegate:AddMemberDelegate?
-    @IBOutlet var AddMemberText: UITextField!
+    @IBOutlet var username: UITextField!
+    @IBOutlet var sendingPaymentTo: UITextField!
+    @IBOutlet var amount: UITextField!
+    
     
     //Return data to CreateGroupViewController
     @IBAction func AddMemberButton(_ sender: Any) {
         let label = UILabel()
-        label.text = AddMemberText.text
+        label.text = username.text
         label.textColor = .black
-        delegate?.addMemberToStack(member: label)
+        let member = Member()
+        member.memberName = username.text
+        member.memberID = UUID()
+        member.paymentSendingTo = sendingPaymentTo.text
+        member.autopayAmount = Float(amount.text ?? "<no_name>")
+        delegate?.addMemberToStack(label: label, member: member)
         navigationController?.popViewController(animated: true)
     }
     
