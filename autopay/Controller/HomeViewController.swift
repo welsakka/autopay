@@ -26,8 +26,7 @@ class HomeViewController: UIViewController {
     //Button to group info view
     @objc func buttonActionToGroupView(sender: UIButton!) {
         let vc = storyboard?.instantiateViewController(identifier: "groupInfoView") as! GroupInfoViewController
-        vc.groupTitle.text = user1.recurringPayments[sender.tag].name
-        vc.nextPaymentDue.text = "I dont know man"
+        vc.myTitle = user1.recurringPayments[sender.tag].name ?? "ERROR"
         navigationController?.pushViewController(vc, animated: true)
         
     }

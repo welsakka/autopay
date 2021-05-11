@@ -755,6 +755,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="groupTitle" destination="S1g-MW-tcU" id="Erl-2m-yqb"/>
                         <outlet property="memberStack" destination="P5p-mM-IHQ" id="f2u-gO-mB9"/>
                         <outlet property="nextPaymentDue" destination="hEd-Hm-n9a" id="taH-jO-zHg"/>
                     </connections>
