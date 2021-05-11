@@ -517,7 +517,7 @@
                                 <rect key="frame" x="25" y="266" width="364" height="34"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-Pn-R6n">
                                 <rect key="frame" x="30" y="352" width="199" height="36"/>
@@ -621,7 +621,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Venmo Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWo-bJ-Wpd">
                                 <rect key="frame" x="100" y="431" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount To Send?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbA-gY-VNf">
                                 <rect key="frame" x="100" y="549" width="214" height="34"/>
@@ -647,7 +647,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sending Payment To?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-E1-w70">
                                 <rect key="frame" x="100" y="490" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Vr-wz-5Ma"/>
@@ -684,10 +684,10 @@
             </objects>
             <point key="canvasLocation" x="7665" y="70"/>
         </scene>
-        <!--Group Owner View Controller-->
+        <!--Group Info View Controller-->
         <scene sceneID="K4C-0G-Zwi">
             <objects>
-                <viewController storyboardIdentifier="groupOwnerView" id="i0z-9e-6V1" customClass="GroupOwnerViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="groupInfoView" id="i0z-9e-6V1" customClass="GroupInfoViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iS3-Xw-bcY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,15 +722,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpX-DL-RWJ">
-                                <rect key="frame" x="20" y="64" width="338" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-mM-IHQ">
                                 <rect key="frame" x="30" y="488" width="354" height="344"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1g-MW-tcU">
+                                <rect key="frame" x="116" y="75" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RVQ-07-oxV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -738,9 +738,9 @@
                             <constraint firstItem="hhB-jP-IoX" firstAttribute="top" secondItem="4zw-Ik-14K" secondAttribute="bottom" constant="35" id="05G-Dt-7ve"/>
                             <constraint firstItem="qN7-HB-VqF" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="110" id="2OI-iR-s4x"/>
                             <constraint firstItem="9G9-Km-qfB" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="380" id="9hq-NS-Gjd"/>
-                            <constraint firstItem="JpX-DL-RWJ" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="20" id="CWx-D9-4ts"/>
                             <constraint firstItem="P5p-mM-IHQ" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="30" id="GQB-cC-Ett"/>
                             <constraint firstItem="9G9-Km-qfB" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="26" id="HBv-ja-WHw"/>
+                            <constraint firstItem="RVQ-07-oxV" firstAttribute="trailing" secondItem="S1g-MW-tcU" secondAttribute="trailing" constant="116" id="QYq-5Z-7d0"/>
                             <constraint firstItem="RVQ-07-oxV" firstAttribute="bottom" secondItem="P5p-mM-IHQ" secondAttribute="bottom" constant="30" id="UH1-Mo-rlJ"/>
                             <constraint firstItem="hEd-Hm-n9a" firstAttribute="top" secondItem="hhB-jP-IoX" secondAttribute="bottom" constant="1" id="WYc-DN-gi2"/>
                             <constraint firstItem="P5p-mM-IHQ" firstAttribute="top" secondItem="9G9-Km-qfB" secondAttribute="bottom" constant="35" id="cme-1q-tBS"/>
@@ -748,96 +748,20 @@
                             <constraint firstItem="qN7-HB-VqF" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="g4E-VV-aPi"/>
                             <constraint firstItem="RVQ-07-oxV" firstAttribute="trailing" secondItem="P5p-mM-IHQ" secondAttribute="trailing" constant="30" id="nWO-zN-B3O"/>
                             <constraint firstItem="4zw-Ik-14K" firstAttribute="top" secondItem="qN7-HB-VqF" secondAttribute="bottom" constant="1" id="nWS-qg-Vu8"/>
-                            <constraint firstItem="JpX-DL-RWJ" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="20" id="pMo-mX-ZHv"/>
+                            <constraint firstItem="S1g-MW-tcU" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="31" id="olm-3l-neN"/>
+                            <constraint firstItem="S1g-MW-tcU" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="116" id="uXI-BC-Ffe"/>
                             <constraint firstItem="hEd-Hm-n9a" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="wFl-5j-U54"/>
                             <constraint firstItem="4zw-Ik-14K" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="wfX-F1-yNq"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="memberStack" destination="P5p-mM-IHQ" id="X3y-Wq-7Tv"/>
+                        <outlet property="memberStack" destination="P5p-mM-IHQ" id="f2u-gO-mB9"/>
+                        <outlet property="nextPaymentDue" destination="hEd-Hm-n9a" id="taH-jO-zHg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zs-5S-pwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6118.840579710145" y="745.98214285714278"/>
-        </scene>
-        <!--Group Member View Controller-->
-        <scene sceneID="9sc-zW-VQG">
-            <objects>
-                <viewController storyboardIdentifier="groupMemberView" id="G0c-QE-WMg" customClass="GroupMemberViewController" customModule="autopay" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qs3-BZ-oRF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yL-WK-53G">
-                                <rect key="frame" x="136" y="154" width="142.5" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$xx.xx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-Os-78T">
-                                <rect key="frame" x="157.5" y="184" width="99.5" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Payment On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60l-qg-Wpb">
-                                <rect key="frame" x="117" y="262" width="180.5" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;next scheduled date&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5s-Au-8eC">
-                                <rect key="frame" x="29.5" y="292" width="355" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uac-bs-8Rn">
-                                <rect key="frame" x="26" y="424" width="98" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrV-Bh-Wol">
-                                <rect key="frame" x="20" y="64" width="338" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-Zx-lS6">
-                                <rect key="frame" x="30" y="488" width="354" height="344"/>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="epc-UM-CG4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Y5s-Au-8eC" firstAttribute="top" secondItem="60l-qg-Wpb" secondAttribute="bottom" constant="1" id="1Vl-FZ-Drl"/>
-                            <constraint firstItem="0r7-Zx-lS6" firstAttribute="top" secondItem="Uac-bs-8Rn" secondAttribute="bottom" constant="35" id="1vL-R5-6ID"/>
-                            <constraint firstItem="0yL-WK-53G" firstAttribute="top" secondItem="epc-UM-CG4" secondAttribute="top" constant="110" id="Hi5-Nf-7gY"/>
-                            <constraint firstItem="60l-qg-Wpb" firstAttribute="top" secondItem="a8x-Os-78T" secondAttribute="bottom" constant="35" id="NjL-p4-640"/>
-                            <constraint firstItem="Uac-bs-8Rn" firstAttribute="top" secondItem="epc-UM-CG4" secondAttribute="top" constant="380" id="OEs-7c-pSb"/>
-                            <constraint firstItem="60l-qg-Wpb" firstAttribute="centerX" secondItem="Qs3-BZ-oRF" secondAttribute="centerX" id="OP1-1r-ide"/>
-                            <constraint firstItem="FrV-Bh-Wol" firstAttribute="top" secondItem="epc-UM-CG4" secondAttribute="top" constant="20" id="R9T-5z-7mr"/>
-                            <constraint firstItem="0r7-Zx-lS6" firstAttribute="leading" secondItem="epc-UM-CG4" secondAttribute="leading" constant="30" id="SND-T6-Rvf"/>
-                            <constraint firstItem="0yL-WK-53G" firstAttribute="centerX" secondItem="Qs3-BZ-oRF" secondAttribute="centerX" id="U9G-EH-4GN"/>
-                            <constraint firstItem="epc-UM-CG4" firstAttribute="bottom" secondItem="0r7-Zx-lS6" secondAttribute="bottom" constant="30" id="Z6F-qZ-KfW"/>
-                            <constraint firstItem="Y5s-Au-8eC" firstAttribute="centerX" secondItem="Qs3-BZ-oRF" secondAttribute="centerX" id="anJ-Gg-tXg"/>
-                            <constraint firstItem="a8x-Os-78T" firstAttribute="centerX" secondItem="Qs3-BZ-oRF" secondAttribute="centerX" id="cpT-xW-hPM"/>
-                            <constraint firstItem="FrV-Bh-Wol" firstAttribute="leading" secondItem="epc-UM-CG4" secondAttribute="leading" constant="20" id="dr7-vL-V4X"/>
-                            <constraint firstItem="epc-UM-CG4" firstAttribute="trailing" secondItem="0r7-Zx-lS6" secondAttribute="trailing" constant="30" id="rCj-U0-lKh"/>
-                            <constraint firstItem="a8x-Os-78T" firstAttribute="top" secondItem="0yL-WK-53G" secondAttribute="bottom" constant="1" id="tKZ-vo-6en"/>
-                            <constraint firstItem="Uac-bs-8Rn" firstAttribute="leading" secondItem="epc-UM-CG4" secondAttribute="leading" constant="26" id="y7q-5h-SmE"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="memberList" destination="0r7-Zx-lS6" id="4Wf-OB-2Uo"/>
-                        <outlet property="memberStack" destination="0r7-Zx-lS6" id="aRn-ai-yQL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lAW-JL-KTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6119" y="1439"/>
         </scene>
     </scenes>
     <resources>

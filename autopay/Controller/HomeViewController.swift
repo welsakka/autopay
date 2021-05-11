@@ -9,7 +9,6 @@ import UIKit
 
 public var user1 = User()
 
-
 class HomeViewController: UIViewController {
     
     @IBOutlet var GroupsStackView: UIStackView!
@@ -24,11 +23,16 @@ class HomeViewController: UIViewController {
          return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
     }
     
+    //Button to group info view
     @objc func buttonActionToGroupView(sender: UIButton!) {
-        let vc = storyboard?.instantiateViewController(identifier: "groupOwnerView") as! GroupOwnerViewController
+        let vc = storyboard?.instantiateViewController(identifier: "groupInfoView") as! GroupInfoViewController
+        vc.groupTitle.text = user1.recurringPayments[sender.tag].name
+        vc.nextPaymentDue.text = "I dont know man"
         navigationController?.pushViewController(vc, animated: true)
+        
     }
     
+    //button to create group view
     @objc func buttonActionToCreateGroupView(sender: UIButton!) {
         let vc = storyboard?.instantiateViewController(identifier: "createGroupView") as! CreateGroupViewController
         navigationController?.pushViewController(vc, animated: true)
@@ -42,15 +46,17 @@ class HomeViewController: UIViewController {
         user1.username = "MortyIsArmin"
         user1.id = UUID()
         user1.firstName = "Waleed"
+        var index = 0
         
         for payment in user1.recurringPayments {
             let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+            button.tag = index
             button.setTitle(payment.name, for: .normal)
             button.backgroundColor = getRandomColor()
-            GroupsStackView.addArrangedSubview(button)
             button.addTarget(self, action: #selector(buttonActionToGroupView), for: .touchUpInside)
-            
-        }
+            GroupsStackView.addArrangedSubview(button)
+            index = index + 1
+            }
         GroupsStackView.distribution = .fillEqually
         GroupsStackView.spacing = 25
         

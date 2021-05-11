@@ -11,18 +11,17 @@
 		7C84D5DD4AB0C37019CBBB47 /* Pods_autopay_autopayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CFA8E31D2A26BDD7A752D8 /* Pods_autopay_autopayUITests.framework */; };
 		7F290E1326406C3B000025F8 /* CreateGroupAddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */; };
 		7F290E192641E4DA000025F8 /* AddMembersDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E182641E4DA000025F8 /* AddMembersDelegate.swift */; };
+		7F290E2A26471D6F000025F8 /* GroupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */; };
 		7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */; };
 		7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */; };
 		7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */; };
 		7F4EE9FA25CA450A0035C8E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F925CA450A0035C8E1 /* LoginViewController.swift */; };
 		7F4EEA0725D068670035C8E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA0625D068670035C8E1 /* HomeViewController.swift */; };
 		7F4EEA0D25D068DF0035C8E1 /* RecurringPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA0C25D068DF0035C8E1 /* RecurringPayment.swift */; };
-		7F4EEA1825D392310035C8E1 /* GroupOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA1725D392310035C8E1 /* GroupOwnerViewController.swift */; };
 		7F4EEA1D25DB77C30035C8E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA1C25DB77C30035C8E1 /* User.swift */; };
 		7F4EEA3025E319570035C8E1 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA2F25E319570035C8E1 /* BankAccount.swift */; };
 		7F4EEA3525E31AF20035C8E1 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */; };
 		7F4EEA4925E61AD10035C8E1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */; };
-		7FAC8A61262E6EA600F9222A /* GroupMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A60262E6EA600F9222A /* GroupMemberViewController.swift */; };
 		7FAC8A66262E7C2D00F9222A /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A65262E7C2D00F9222A /* CreateGroupViewController.swift */; };
 		7FAC8A83263293C800F9222A /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A82263293C800F9222A /* Member.swift */; };
 		7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF002D25C27BC700D152D7 /* AppDelegate.swift */; };
@@ -60,18 +59,17 @@
 		694116EEC22B133700598B57 /* Pods-autopayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autopayTests.release.xcconfig"; path = "Target Support Files/Pods-autopayTests/Pods-autopayTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupAddMemberViewController.swift; sourceTree = "<group>"; };
 		7F290E182641E4DA000025F8 /* AddMembersDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembersDelegate.swift; sourceTree = "<group>"; };
+		7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewController.swift; sourceTree = "<group>"; };
 		7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBankViewController.swift; sourceTree = "<group>"; };
 		7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCreditViewController.swift; sourceTree = "<group>"; };
 		7F4EE9F925CA450A0035C8E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7F4EEA0625D068670035C8E1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F4EEA0C25D068DF0035C8E1 /* RecurringPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringPayment.swift; sourceTree = "<group>"; };
-		7F4EEA1725D392310035C8E1 /* GroupOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupOwnerViewController.swift; sourceTree = "<group>"; };
 		7F4EEA1C25DB77C30035C8E1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7F4EEA2F25E319570035C8E1 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7FAC8A60262E6EA600F9222A /* GroupMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMemberViewController.swift; sourceTree = "<group>"; };
 		7FAC8A65262E7C2D00F9222A /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		7FAC8A82263293C800F9222A /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		7FCF002A25C27BC700D152D7 /* autopay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autopay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,9 +157,8 @@
 				7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */,
 				7F4EE9F925CA450A0035C8E1 /* LoginViewController.swift */,
 				7F4EEA0625D068670035C8E1 /* HomeViewController.swift */,
-				7F4EEA1725D392310035C8E1 /* GroupOwnerViewController.swift */,
-				7FAC8A60262E6EA600F9222A /* GroupMemberViewController.swift */,
 				7FAC8A65262E7C2D00F9222A /* CreateGroupViewController.swift */,
+				7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */,
 				7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */,
 			);
 			path = Controller;
@@ -502,16 +499,15 @@
 				7FAC8A66262E7C2D00F9222A /* CreateGroupViewController.swift in Sources */,
 				7F4EEA3525E31AF20035C8E1 /* CreditCard.swift in Sources */,
 				7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */,
+				7F290E2A26471D6F000025F8 /* GroupInfoViewController.swift in Sources */,
 				7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */,
 				7F290E192641E4DA000025F8 /* AddMembersDelegate.swift in Sources */,
 				7F4EEA0725D068670035C8E1 /* HomeViewController.swift in Sources */,
 				7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */,
 				7F290E1326406C3B000025F8 /* CreateGroupAddMemberViewController.swift in Sources */,
-				7F4EEA1825D392310035C8E1 /* GroupOwnerViewController.swift in Sources */,
 				7FAC8A83263293C800F9222A /* Member.swift in Sources */,
 				7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */,
 				7FCF003025C27BC700D152D7 /* SceneDelegate.swift in Sources */,
-				7FAC8A61262E6EA600F9222A /* GroupMemberViewController.swift in Sources */,
 				7F4EEA0D25D068DF0035C8E1 /* RecurringPayment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
