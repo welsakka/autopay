@@ -37,7 +37,6 @@ class HomeViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

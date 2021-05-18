@@ -146,6 +146,13 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		7F290E2E26537886000025F8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		7F4EE9D925C8F3DC0035C8E1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,12 +217,13 @@
 		7FCF002C25C27BC700D152D7 /* autopay */ = {
 			isa = PBXGroup;
 			children = (
+				7F290E2E26537886000025F8 /* Utility */,
 				7F290E172641E4BA000025F8 /* Protocol */,
-				7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */,
 				7F4EEA0B25D068A20035C8E1 /* Model */,
 				7F4EE9DD25C8F4EE0035C8E1 /* View */,
 				7F4EE9D925C8F3DC0035C8E1 /* Controller */,
 				7FCF002D25C27BC700D152D7 /* AppDelegate.swift */,
+				7F4EEA4825E61AD10035C8E1 /* GoogleService-Info.plist */,
 				7FCF002F25C27BC700D152D7 /* SceneDelegate.swift */,
 				7FCF003625C27BC900D152D7 /* Assets.xcassets */,
 				7FCF003B25C27BC900D152D7 /* Info.plist */,
