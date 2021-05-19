@@ -12,6 +12,7 @@
 		7F290E1326406C3B000025F8 /* CreateGroupAddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */; };
 		7F290E192641E4DA000025F8 /* AddMembersDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E182641E4DA000025F8 /* AddMembersDelegate.swift */; };
 		7F290E2A26471D6F000025F8 /* GroupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */; };
+		7F290E302654CFD4000025F8 /* SendFakeVenmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E2F2654CFD4000025F8 /* SendFakeVenmo.swift */; };
 		7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */; };
 		7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */; };
 		7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */; };
@@ -60,6 +61,7 @@
 		7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupAddMemberViewController.swift; sourceTree = "<group>"; };
 		7F290E182641E4DA000025F8 /* AddMembersDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembersDelegate.swift; sourceTree = "<group>"; };
 		7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewController.swift; sourceTree = "<group>"; };
+		7F290E2F2654CFD4000025F8 /* SendFakeVenmo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFakeVenmo.swift; sourceTree = "<group>"; };
 		7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBankViewController.swift; sourceTree = "<group>"; };
 		7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCreditViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		7F290E2E26537886000025F8 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				7F290E2F2654CFD4000025F8 /* SendFakeVenmo.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F290E302654CFD4000025F8 /* SendFakeVenmo.swift in Sources */,
 				7F4EEA1D25DB77C30035C8E1 /* User.swift in Sources */,
 				7F4EE9FA25CA450A0035C8E1 /* LoginViewController.swift in Sources */,
 				7FCF006E25C5D99A00D152D7 /* RegisterPaymentViewController.swift in Sources */,

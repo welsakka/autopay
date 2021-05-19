@@ -40,6 +40,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //test SendFakeVenmo
+        let check = checkRecurringPayments()
+        check.startTimer()
+        
 //      Create User and add the Users groups to the stack view
         user1.username = "MortyIsArmin"
         user1.id = UUID()
