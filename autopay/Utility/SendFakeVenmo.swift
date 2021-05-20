@@ -14,7 +14,7 @@ class checkRecurringPayments {
     
     func startTimer() {
         //in a function or viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
     }
 
     //new function
@@ -25,5 +25,4 @@ class checkRecurringPayments {
             count = count + 1
         }
     }
-    
 }

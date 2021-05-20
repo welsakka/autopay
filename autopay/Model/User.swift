@@ -12,6 +12,8 @@ import Foundation
  */
 public class User {
     var username: String?
+    //temporary store for user's venmo password
+    var password: String?
     //find a better data type than string for id's
     var id: UUID?
     var firstName: String?
