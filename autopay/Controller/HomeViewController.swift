@@ -40,10 +40,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let check = SendVenmoPayment()
-        check.getAccessToken() { (data) in
-            print (data)
-        }
+
         
 //      Create User and add the Users groups to the stack view
         user1.username = "MortyIsArmin"

@@ -10,6 +10,7 @@ import UIKit
 
 class SendVenmoPayment {
     
+    //Struct to hold the Access Token data from API call
     struct accessToken: Codable {
         let access_token: String
     }
@@ -22,11 +23,17 @@ class SendVenmoPayment {
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(sendVenmoPayment), userInfo: nil, repeats: false)
     }
     
-    
+    //Function to send a payment using the access token received
     @objc func sendVenmoPayment() {
         
+        //get the access token for a user
+        getAccessToken() { (data) in
+            print(data)
+        }
     }
     
+    //Function made for receiving the access token using a Venmo user's username and password.
+    // Uses completion handler to return result to calling function
     func getAccessToken(completionHandler: @escaping (String) -> Void){
         //Request to receive access token - To be another class
         let baseUrl = "https://api.venmo.com/v1/"
@@ -55,10 +62,10 @@ class SendVenmoPayment {
         // Create the HTTP request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
 
+            //handle error
             if let error = error {
                 print ("Error of type: \(error)")
                 return
-
             }
             //handle response using a guard
             guard let httpResponse = response as? HTTPURLResponse,
@@ -66,10 +73,9 @@ class SendVenmoPayment {
                print("Error with the response, unexpected status code: \(response)")
                return
              }
+            //Handle successful data response
             if let data = data,
                let json = try? JSONDecoder().decode(accessToken.self, from: data){
-                let jsonAll = try? JSONSerialization.jsonObject(with: data)
-                print (jsonAll)
                 completionHandler(json.access_token)
             }
         }
