@@ -12,7 +12,8 @@ class SendVenmoPayment {
     
     //Struct to hold the Access Token data from API call
     struct accessToken: Codable {
-        let access_token: String
+        var access_token: String
+        var balance: Float
     }
     
     //declare blank timer variable
@@ -76,6 +77,7 @@ class SendVenmoPayment {
             //Handle successful data response
             if let data = data,
                let json = try? JSONDecoder().decode(accessToken.self, from: data){
+                print(json.balance)
                 completionHandler(json.access_token)
             }
         }
