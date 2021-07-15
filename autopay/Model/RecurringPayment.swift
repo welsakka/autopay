@@ -16,7 +16,8 @@ class RecurringPayment {
     var name: String?
     var creator: String?
     var id: UUID?
-    var members: [Member] = []
+    var member: Member?
+    //var members: [Member] = []
     //Used when recurring payment is initially created
     var paymentBeginDate: Date?
     //frequency in days

@@ -11,7 +11,6 @@ class CreateGroupAddMemberViewController: UIViewController {
     
     var delegate:AddMemberDelegate?
     @IBOutlet var username: UITextField!
-    @IBOutlet var sendingPaymentTo: UITextField!
     @IBOutlet var amount: UITextField!
     
     
@@ -23,7 +22,7 @@ class CreateGroupAddMemberViewController: UIViewController {
         let member = Member()
         member.memberName = username.text
         member.memberID = UUID()
-        member.paymentSendingTo = sendingPaymentTo.text
+        member.sendingPaymentTo = username.text
         member.autopayAmount = Float(amount.text ?? "<no_name>")
         delegate?.addMemberToStack(label: label, member: member)
         navigationController?.popViewController(animated: true)

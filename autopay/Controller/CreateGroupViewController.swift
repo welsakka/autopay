@@ -11,6 +11,8 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate {
     
     @IBOutlet var RecurringPaymentName: UITextField!
     @IBOutlet var MembersStack: UIStackView!
+    @IBOutlet var venmoUsername: UITextField!
+    @IBOutlet var paymentAmount: UITextField!
     var memberArr: [Member] = []
     
     //Function for when the user wants to add a member to the Rec.Pay.
@@ -36,9 +38,9 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate {
         newRecurringPayment.id = UUID()
         newRecurringPayment.name = name
         newRecurringPayment.creator = user1.username
-        for member in memberArr {
-            newRecurringPayment.members.append(member)
-        }
+        newRecurringPayment.member?.autopayAmount = Float(paymentAmount.text ?? "<no_text")
+        newRecurringPayment.member?.memberName = venmoUsername.text
+        
         
         return newRecurringPayment
     }
