@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LandingViewController: UIViewController {
     
@@ -13,11 +14,13 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+
+        let testFirebase = TestFirebaseFunctions()
+        testFirebase.addMessage(text: "This is a message to Waleed!!")
     }
     
     @IBAction func clickLogin(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "loginView") as! LoginViewController
+        let vc = storyboard?.instantiateViewController(identifier: "homeView") as! HomeViewController
         navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func clickRegister(_ sender: Any) {

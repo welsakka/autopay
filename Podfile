@@ -1,23 +1,13 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
+
+# Add the pods for the Firebase products you want to use in your app
+# For example, to use Firebase Authentication and Cloud Firestore
+
 
 target 'autopay' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for autopay
-  
-  pod 'Firebase/Analytics'
-
-  target 'autopayTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'autopayUITests' do
-    # Pods for testing
-  end
-  
-  
+  project '/Users/waleede/Projects/autopay/autopay.xcworkspace'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Functions'
 
 end

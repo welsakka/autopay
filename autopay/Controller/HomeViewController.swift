@@ -40,13 +40,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//      Getting access token
         let venmo = SendVenmoPayment()
         venmo.sendVenmoPayment()
         
-//      Create User and add the Users groups to the stack view
-        user1.username = "MortyIsArmin"
+//      Add the Users groups to the stack view
         user1.id = UUID()
-        user1.firstName = "Waleed"
         var index = 0
         
         for payment in user1.recurringPayments {

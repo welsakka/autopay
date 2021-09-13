@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>893628373387-us4lev5h805vaio47lbn89sqfr29ccef.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.893628373387-us4lev5h805vaio47lbn89sqfr29ccef</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDOab9q0N9UcyUmj_53VXtkdYjpCwibEhI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>893628373387</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.waleed.autopay</string>
+	<key>PROJECT_ID</key>
+	<string>autopay-54220</string>
+	<key>STORAGE_BUCKET</key>
+	<string>autopay-54220.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:893628373387:ios:b81ccd42e9ee96d459f78e</string>
+</dict>
+</plist>

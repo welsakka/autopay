@@ -15,8 +15,17 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func username(_ sender: Any) {
+    }
+    
+    @IBAction func password(_ sender: Any) {
+    }
+    
+    @IBAction func confirmPassword(_ sender: Any) {
+    }
+    
     @IBAction func clickNext(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "registerPayment") as! RegisterPaymentViewController
+        let vc = storyboard?.instantiateViewController(identifier: "homeView") as! HomeViewController
         navigationController?.pushViewController(vc, animated: true)
     }
     
