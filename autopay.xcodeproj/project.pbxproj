@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F11C567269FEB8500A88A2C /* Payee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11C566269FEB8500A88A2C /* Payee.swift */; };
 		7F290E1326406C3B000025F8 /* CreateGroupAddMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */; };
 		7F290E192641E4DA000025F8 /* AddMembersDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E182641E4DA000025F8 /* AddMembersDelegate.swift */; };
 		7F290E2A26471D6F000025F8 /* GroupInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */; };
@@ -59,7 +58,6 @@
 
 /* Begin PBXFileReference section */
 		352470A4053719C9F9D16426 /* libPods-autopay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-autopay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F11C566269FEB8500A88A2C /* Payee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payee.swift; sourceTree = "<group>"; };
 		7F290E1226406C3B000025F8 /* CreateGroupAddMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupAddMemberViewController.swift; sourceTree = "<group>"; };
 		7F290E182641E4DA000025F8 /* AddMembersDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembersDelegate.swift; sourceTree = "<group>"; };
 		7F290E2926471D6F000025F8 /* GroupInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +186,6 @@
 				7F4EEA2F25E319570035C8E1 /* BankAccount.swift */,
 				7F4EEA3425E31AF20035C8E1 /* CreditCard.swift */,
 				7FAC8A82263293C800F9222A /* Member.swift */,
-				7F11C566269FEB8500A88A2C /* Payee.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,7 +445,6 @@
 				7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */,
 				7F290E2A26471D6F000025F8 /* GroupInfoViewController.swift in Sources */,
 				7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */,
-				7F11C567269FEB8500A88A2C /* Payee.swift in Sources */,
 				7F290E192641E4DA000025F8 /* AddMembersDelegate.swift in Sources */,
 				7F4EEA0725D068670035C8E1 /* HomeViewController.swift in Sources */,
 				7FCF002E25C27BC700D152D7 /* AppDelegate.swift in Sources */,

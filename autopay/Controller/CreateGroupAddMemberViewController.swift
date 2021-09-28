@@ -22,8 +22,6 @@ class CreateGroupAddMemberViewController: UIViewController {
         let member = Member()
         member.memberName = username.text
         member.memberID = UUID()
-        member.sendingPaymentTo = username.text
-        member.autopayAmount = Float(amount.text ?? "<no_name>")
         delegate?.addMemberToStack(label: label, member: member)
         navigationController?.popViewController(animated: true)
     }

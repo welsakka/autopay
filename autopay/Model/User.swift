@@ -15,6 +15,8 @@ public class User {
     //temporary store for user's venmo password
     var password: String?
     //find a better data type than string for id's
+    var venmoUsername: String?
+    var venmoPassword: String?
     var id: UUID?
     var firstName: String?
     var lastName: String?

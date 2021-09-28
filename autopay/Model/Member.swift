@@ -15,11 +15,5 @@ class Member {
     //same as User's name
     var memberName: String?
     //Perhaps same as User ID
-    var memberID: UUID?  
-    //memberName the payment is being sent to
-    var sendingPaymentTo: String?
-    //amount of money that will be sent
-    var autopayAmount: Float?
-    
-    
+    var memberID: UUID?
 }

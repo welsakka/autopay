@@ -16,12 +16,17 @@ class RecurringPayment {
     var name: String?
     var creator: String?
     var id: UUID?
-    var member: Member?
+    var payer: Member?
+    var payee: Member?
+    var paymentAmount: Float?
+    var paymentFrequency: String?
+    var paymentDate: Int?
+    //var member: Member?
     //var members: [Member] = []
     //Used when recurring payment is initially created
     var paymentBeginDate: Date?
     //frequency in days
-    var paymentFrequency: Int?
+    
 }
 
 
