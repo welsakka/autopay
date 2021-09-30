@@ -518,74 +518,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Recurring Payment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-aa-MTW">
-                                <rect key="frame" x="57.5" y="69" width="299" height="106"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="v74-r5-VhV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-vm-QGP">
-                                <rect key="frame" x="20" y="23" width="374" height="719"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-vm-QGP">
+                                <rect key="frame" x="20" y="44" width="374" height="309"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Recurring Payment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-aa-MTW">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="106" id="v74-r5-VhV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-OC-gKQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                        <rect key="frame" x="0.0" y="108" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type name here" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-pi-bN9">
-                                        <rect key="frame" x="0.0" y="33" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="139" width="374" height="34"/>
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venmo Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCW-zt-Ilv">
-                                        <rect key="frame" x="0.0" y="71" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="175" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username to send payment to" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dbf-Rd-94s">
-                                        <rect key="frame" x="0.0" y="105" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="207" width="374" height="34"/>
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to Send?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8E-6J-hqn">
-                                        <rect key="frame" x="0.0" y="143" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="243" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dollar amount to send to user" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zrd-OB-j54">
-                                        <rect key="frame" x="0.0" y="177" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="275" width="374" height="34"/>
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Frequency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-nu-aFZ">
-                                        <rect key="frame" x="0.0" y="215" width="374" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12u-aF-nJI">
-                                        <rect key="frame" x="0.0" y="249" width="374" height="216"/>
-                                    </pickerView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-mn-Idy">
-                                        <rect key="frame" x="0.0" y="469" width="374" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-1N-7St">
-                                        <rect key="frame" x="0.0" y="503" width="374" height="216"/>
-                                    </pickerView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Frequency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-nu-aFZ">
+                                <rect key="frame" x="45.5" y="386" width="323" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12u-aF-nJI">
+                                <rect key="frame" x="5" y="441" width="404" height="216"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-mn-Idy">
+                                <rect key="frame" x="132" y="682" width="150.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Ac-IQM">
                                 <rect key="frame" x="184" y="790" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
@@ -593,19 +591,29 @@
                                     <action selector="CreateRecurringPaymentButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="ttc-1z-ZEr"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-1N-7St">
+                                <rect key="frame" x="47" y="723" width="320" height="62"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y36-JW-imm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MLi-aa-MTW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WIq-cP-TyF" secondAttribute="leading" id="0R1-JL-Jzk"/>
+                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="45.5" id="0I2-4w-3Rk"/>
+                            <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="1fI-nu-aFZ" secondAttribute="trailing" constant="45.5" id="0wW-Yi-tiC"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="MR0-vm-QGP" secondAttribute="trailing" constant="20" id="4d7-0R-3WY"/>
                             <constraint firstItem="MR0-vm-QGP" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="20" id="GhE-83-bmv"/>
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Hsp-wo-1lR"/>
-                            <constraint firstItem="MLi-aa-MTW" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Jzu-AF-QfE"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MLi-aa-MTW" secondAttribute="trailing" id="S8q-97-tTQ"/>
+                            <constraint firstItem="12u-aF-nJI" firstAttribute="top" secondItem="1fI-nu-aFZ" secondAttribute="bottom" constant="25" id="IqI-cM-JWg"/>
+                            <constraint firstItem="OKg-mn-Idy" firstAttribute="top" secondItem="12u-aF-nJI" secondAttribute="bottom" constant="25" id="Kja-SQ-tjS"/>
+                            <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="NqC-1N-7St" secondAttribute="bottom" constant="5" id="OHb-wH-IlT"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="bottom" secondItem="knc-Ac-IQM" secondAttribute="bottom" constant="42" id="SRf-E2-4Xw"/>
-                            <constraint firstItem="MLi-aa-MTW" firstAttribute="top" secondItem="y36-JW-imm" secondAttribute="top" constant="25" id="c9h-tq-0da"/>
-                            <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="MR0-vm-QGP" secondAttribute="bottom" constant="48" id="xie-4O-60d"/>
+                            <constraint firstItem="NqC-1N-7St" firstAttribute="top" secondItem="OKg-mn-Idy" secondAttribute="bottom" constant="11" id="WAl-Ok-LIm"/>
+                            <constraint firstItem="NqC-1N-7St" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="gW8-qJ-up3"/>
+                            <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="12u-aF-nJI" secondAttribute="trailing" constant="5" id="iP5-ZA-CKT"/>
+                            <constraint firstItem="12u-aF-nJI" firstAttribute="top" secondItem="WIq-cP-TyF" secondAttribute="top" constant="441" id="txx-UW-He2"/>
+                            <constraint firstItem="12u-aF-nJI" firstAttribute="leading" secondItem="WIq-cP-TyF" secondAttribute="leading" constant="5" id="uw0-49-zES"/>
+                            <constraint firstItem="OKg-mn-Idy" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="vXZ-uq-6WC"/>
+                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="top" secondItem="MR0-vm-QGP" secondAttribute="bottom" constant="33" id="yMP-5w-J7O"/>
                         </constraints>
                     </view>
                     <connections>

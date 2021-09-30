@@ -63,8 +63,8 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate, UIPickerVi
         newRecurringPayment.creator = user1.username
         newRecurringPayment.paymentAmount = Float(paymentAmount.text ?? "<no_text")
         newRecurringPayment.payer?.memberName = venmoUsername.text
-        //newRecurringPayment.paymentFrequency = paymentFrequencyDataSource[paymentFrequency.selectedRow(inComponent: 1)]
-        //newRecurringPayment.paymentDate = paymentDateDataSource[paymentDate.selectedRow(inComponent: 1)]
+        newRecurringPayment.paymentFrequency = paymentFrequencyDataSource[paymentFrequency.selectedRow(inComponent: 0)]
+        newRecurringPayment.paymentDate = paymentDateDataSource[paymentDate.selectedRow(inComponent: 0)]
         
         return newRecurringPayment
     }
