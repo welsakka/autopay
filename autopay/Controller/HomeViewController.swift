@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(identifier: "groupInfoView") as! GroupInfoViewController
         vc.myTitle = user1.recurringPayments[sender.tag].name ?? "ERROR"
         vc.myPayment = user1.recurringPayments[sender.tag].paymentAmount
+        vc.paymentDate = user1.recurringPayments[sender.tag].paymentDate
         navigationController?.pushViewController(vc, animated: true)
         
     }
