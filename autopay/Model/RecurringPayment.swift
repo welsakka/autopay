@@ -16,8 +16,8 @@ class RecurringPayment {
     var name: String?
     var creator: String?
     var id: UUID?
-    var payer: Member?
-    var payee: Member?
+    var payer: User?
+    var payee: User?
     var paymentAmount: Float?
     var paymentFrequency: String?
     var paymentDate: Int?

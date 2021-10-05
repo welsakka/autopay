@@ -15,6 +15,7 @@ class GroupInfoViewController: UIViewController {
     @IBOutlet var groupTitle: UILabel!
     @IBOutlet var nextPaymentDue: UILabel!
     @IBOutlet var paymentTotal: UILabel!
+    @IBOutlet var payee: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         groupTitle.text = myTitle

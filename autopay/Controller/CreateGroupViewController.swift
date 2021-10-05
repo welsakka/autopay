@@ -18,7 +18,7 @@ class CreateGroupViewController: UIViewController, AddMemberDelegate, UIPickerVi
     @IBOutlet var paymentFrequency: UIPickerView!
     @IBOutlet var paymentDate: UIPickerView!
     var paymentFrequencyDataSource = ["Monthly"]
-    var paymentDateDataSource = Array(0...31)
+    var paymentDateDataSource = Array(1...31)
     
     //Functions for the Payment frequency pickerview
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
