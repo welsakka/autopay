@@ -48,9 +48,9 @@ class SendVenmoPayment {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         //add data to body
-        let body = ["phone_email_or_username": user1.username,
+        let body = ["phone_email_or_username": user1.venmoUsername,
                       "client_id": "1",
-                      "password": user1.password]
+                      "password": user1.venmoPassword]
         let bodyData = try? JSONSerialization.data(
             withJSONObject: body,
             options: []

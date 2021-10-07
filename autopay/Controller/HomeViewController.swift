@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
         vc.myTitle = user1.recurringPayments[sender.tag].name ?? "ERROR"
         vc.myPayment = user1.recurringPayments[sender.tag].paymentAmount
         vc.paymentDate = user1.recurringPayments[sender.tag].paymentDate
+        vc.payeeText = user1.recurringPayments[sender.tag].payee?.username ?? "none"
         navigationController?.pushViewController(vc, animated: true)
         
     }

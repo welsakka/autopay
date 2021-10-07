@@ -1,4 +1,4 @@
-framework module Pods_autopay {
+module Pods_autopay {
   umbrella header "Pods-autopay-umbrella.h"
 
   export *

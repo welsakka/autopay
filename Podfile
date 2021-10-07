@@ -9,5 +9,6 @@ target 'autopay' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Functions'
+  pod 'FirebaseUI'
 
 end

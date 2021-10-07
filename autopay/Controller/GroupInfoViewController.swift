@@ -12,6 +12,7 @@ class GroupInfoViewController: UIViewController {
     var myTitle: String = ""
     var myPayment: Float?
     var paymentDate: Int?
+    var payeeText: String = ""
     @IBOutlet var groupTitle: UILabel!
     @IBOutlet var nextPaymentDue: UILabel!
     @IBOutlet var paymentTotal: UILabel!
@@ -20,6 +21,7 @@ class GroupInfoViewController: UIViewController {
         super.viewDidLoad()
         groupTitle.text = myTitle
         paymentTotal.text = myPayment?.description
+        payee.text = payeeText
         
         //construct next payment date to show to user
         let now = Date()
