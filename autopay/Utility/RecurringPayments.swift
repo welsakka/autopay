@@ -4,8 +4,8 @@ import Firebase
 
 class RecurringPayments {
 
+    //function to add recurring payment to firebase db
     func addRecurringPayment(recPay: RecurringPayment){
-        
         
         var functions = Functions.functions()
         
@@ -24,6 +24,14 @@ class RecurringPayments {
           }
         }
 
+    }
+    
+    //function to get a recurring payment from firebase db using its ID
+    func getRecurringPayment(id: UUID) -> RecurringPayment {
+        
+        var functions = Functions.functions()
+        
+        return RecurringPayment()
     }
 }
 

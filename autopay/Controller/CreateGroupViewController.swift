@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateGroupViewController: UIViewController, AddMemberDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class CreateGroupViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
     //Initialize variables

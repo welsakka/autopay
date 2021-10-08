@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
         vc.myTitle = user1.recurringPayments[sender.tag].name ?? "ERROR"
         vc.myPayment = user1.recurringPayments[sender.tag].paymentAmount
         vc.paymentDate = user1.recurringPayments[sender.tag].paymentDate
-        vc.payeeText = user1.recurringPayments[sender.tag].payee?.username ?? "none"
+        vc.payeeText = user1.recurringPayments[sender.tag].payee ?? "none"
         navigationController?.pushViewController(vc, animated: true)
         
     }
@@ -43,12 +43,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//      Getting access token
-        let venmo = SendVenmoPayment()
-        venmo.sendVenmoPayment()
-        
-//      Add the Users groups to the stack view
+        //Create user id
         user1.id = UUID()
+        
         var index = 0
         
         for payment in user1.recurringPayments {
