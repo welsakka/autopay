@@ -20,8 +20,8 @@ class RecurringPayment {
     
     //payer of payment
     var payer: User?
-    //Receiver of payment
-    var payee: User?
+    //Receiver of payment - CURRENTLY IS VENMO USERNAME
+    var payee: String?
     //Dollar amount that is paid
     var paymentAmount: Float?
     //On what basis the payment will be made

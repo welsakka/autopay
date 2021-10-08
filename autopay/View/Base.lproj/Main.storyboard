@@ -75,21 +75,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register (Venmo user/pass!)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmk-2y-erf">
-                                <rect key="frame" x="40" y="184" width="334" height="93.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmk-2y-erf">
+                                <rect key="frame" x="40" y="184" width="334" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXl-K7-k15">
-                                <rect key="frame" x="191" y="509.5" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="clickNext:" destination="D69-0u-O57" eventType="touchUpInside" id="J6J-hb-aJ3"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IDi-7n-Z8j">
-                                <rect key="frame" x="25" y="337.5" width="364" height="132"/>
+                                <rect key="frame" x="25" y="291" width="364" height="132"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kF5-V3-x6X">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
@@ -120,6 +113,18 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXl-K7-k15">
+                                <rect key="frame" x="180" y="485.5" width="54" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.5" id="q3S-v4-f6I"/>
+                                </constraints>
+                                <state key="normal" title="Next" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickNext:" destination="D69-0u-O57" eventType="touchUpInside" id="J6J-hb-aJ3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UFp-Lb-pFI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -130,8 +135,9 @@
                             <constraint firstItem="IDi-7n-Z8j" firstAttribute="top" secondItem="rmk-2y-erf" secondAttribute="bottom" constant="60" id="HUH-Os-1yE"/>
                             <constraint firstItem="UFp-Lb-pFI" firstAttribute="trailing" secondItem="IDi-7n-Z8j" secondAttribute="trailing" constant="25" id="N8u-CM-r50"/>
                             <constraint firstItem="rmk-2y-erf" firstAttribute="leading" secondItem="UFp-Lb-pFI" secondAttribute="leading" constant="40" id="T7o-Nv-RSz"/>
+                            <constraint firstItem="qXl-K7-k15" firstAttribute="leading" secondItem="UFp-Lb-pFI" secondAttribute="leading" constant="180" id="hzj-ox-u3X"/>
                             <constraint firstItem="qXl-K7-k15" firstAttribute="centerX" secondItem="OO0-cX-GGB" secondAttribute="centerX" id="ja1-qY-51a"/>
-                            <constraint firstItem="qXl-K7-k15" firstAttribute="top" secondItem="IDi-7n-Z8j" secondAttribute="bottom" constant="40" id="krY-Pu-S8X"/>
+                            <constraint firstItem="qXl-K7-k15" firstAttribute="top" secondItem="IDi-7n-Z8j" secondAttribute="bottom" constant="61.5" id="oej-sb-Znn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -578,22 +584,24 @@
                                 <rect key="frame" x="46" y="454" width="322" height="113"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Ac-IQM">
-                                <rect key="frame" x="184" y="790" width="46" height="30"/>
-                                <state key="normal" title="Create"/>
-                                <connections>
-                                    <action selector="CreateRecurringPaymentButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="ttc-1z-ZEr"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-1N-7St">
-                                <rect key="frame" x="47" y="623" width="320" height="159"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Payment Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-mn-Idy">
                                 <rect key="frame" x="132" y="606" width="150.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-1N-7St">
+                                <rect key="frame" x="47" y="623" width="320" height="159"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Ac-IQM">
+                                <rect key="frame" x="171" y="789" width="73" height="30"/>
+                                <state key="normal" title="Create" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="CreateRecurringPaymentButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="ttc-1z-ZEr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y36-JW-imm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -606,7 +614,7 @@
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Hsp-wo-1lR"/>
                             <constraint firstItem="12u-aF-nJI" firstAttribute="top" secondItem="1fI-nu-aFZ" secondAttribute="bottom" constant="8" id="IqI-cM-JWg"/>
                             <constraint firstItem="OKg-mn-Idy" firstAttribute="top" secondItem="12u-aF-nJI" secondAttribute="bottom" constant="39" id="Kja-SQ-tjS"/>
-                            <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="NqC-1N-7St" secondAttribute="bottom" constant="5" id="OHb-wH-IlT"/>
+                            <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="NqC-1N-7St" secondAttribute="bottom" constant="6" id="OHb-wH-IlT"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="bottom" secondItem="knc-Ac-IQM" secondAttribute="bottom" constant="42" id="SRf-E2-4Xw"/>
                             <constraint firstItem="NqC-1N-7St" firstAttribute="top" secondItem="OKg-mn-Idy" secondAttribute="bottom" constant="-13" id="WAl-Ok-LIm"/>
                             <constraint firstItem="NqC-1N-7St" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="gW8-qJ-up3"/>
