@@ -11,17 +11,22 @@ import Foundation
  A user's metadata
  */
 public class User {
+    //NON-SECURE STORAGE OF USERNAE/PASSWORD - USE FIREBASE
     var username: String?
-    //temporary store for user's venmo password
     var password: String?
-    //find a better data type than string for id's
+    
+    //NON-SECURE STORAGE OF USERNAME/PASSWORD - READ HOW TO STORE IN DATABASE
     var venmoUsername: String?
     var venmoPassword: String?
+    
+    //User data
     var id: UUID?
     var firstName: String?
     var lastName: String?
     var profilePicture: String?
     var recurringPayments: [RecurringPayment] = []
+    
+    //TODO
     //var bankAccounts: [bankAccount]?
     //var creditCards: [creditCard]?
         

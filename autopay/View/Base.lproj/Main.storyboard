@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1833.3333333333335" y="69.642857142857139"/>
+            <point key="canvasLocation" x="1025" y="70"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Xbm-ax-hyT">
@@ -282,7 +282,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8T4-AS-VHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923.1884057971015" y="69.642857142857139"/>
+            <point key="canvasLocation" x="114" y="70"/>
         </scene>
         <!--Register Bank View Controller-->
         <scene sceneID="qc2-u7-jdS">
@@ -449,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sf9-qF-kUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="2162"/>
+            <point key="canvasLocation" x="1901" y="70"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="W5e-HM-Zds">
@@ -481,7 +481,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="person.circle" catalog="system"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Cp-Zb-c9f">
+                            <stackView opaque="NO" contentMode="top" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Cp-Zb-c9f">
                                 <rect key="frame" x="20" y="166" width="374" height="656"/>
                             </stackView>
                         </subviews>
@@ -518,8 +518,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-vm-QGP">
-                                <rect key="frame" x="20" y="44" width="374" height="309"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-vm-QGP">
+                                <rect key="frame" x="20" y="63" width="374" height="309"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Recurring Payment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLi-aa-MTW">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="106"/>
@@ -552,7 +552,7 @@
                                         <rect key="frame" x="0.0" y="207" width="374" height="34"/>
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount to Send?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8E-6J-hqn">
                                         <rect key="frame" x="0.0" y="243" width="374" height="30"/>
@@ -568,22 +568,16 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring Payment Frequency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-nu-aFZ">
-                                <rect key="frame" x="45.5" y="386" width="323" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recurring Payment Frequency" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-nu-aFZ">
+                                <rect key="frame" x="46" y="416" width="323" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12u-aF-nJI">
-                                <rect key="frame" x="5" y="441" width="404" height="216"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12u-aF-nJI">
+                                <rect key="frame" x="46" y="454" width="322" height="113"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-mn-Idy">
-                                <rect key="frame" x="132" y="682" width="150.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knc-Ac-IQM">
                                 <rect key="frame" x="184" y="790" width="46" height="30"/>
                                 <state key="normal" title="Create"/>
@@ -591,9 +585,15 @@
                                     <action selector="CreateRecurringPaymentButton:" destination="nZD-Bg-TjB" eventType="touchUpInside" id="ttc-1z-ZEr"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-1N-7St">
-                                <rect key="frame" x="47" y="723" width="320" height="62"/>
+                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-1N-7St">
+                                <rect key="frame" x="47" y="623" width="320" height="159"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Payment Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-mn-Idy">
+                                <rect key="frame" x="132" y="606" width="150.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y36-JW-imm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -601,19 +601,17 @@
                             <constraint firstItem="1fI-nu-aFZ" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="45.5" id="0I2-4w-3Rk"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="1fI-nu-aFZ" secondAttribute="trailing" constant="45.5" id="0wW-Yi-tiC"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="MR0-vm-QGP" secondAttribute="trailing" constant="20" id="4d7-0R-3WY"/>
+                            <constraint firstItem="12u-aF-nJI" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="7lw-2p-epx"/>
                             <constraint firstItem="MR0-vm-QGP" firstAttribute="leading" secondItem="y36-JW-imm" secondAttribute="leading" constant="20" id="GhE-83-bmv"/>
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="Hsp-wo-1lR"/>
-                            <constraint firstItem="12u-aF-nJI" firstAttribute="top" secondItem="1fI-nu-aFZ" secondAttribute="bottom" constant="25" id="IqI-cM-JWg"/>
-                            <constraint firstItem="OKg-mn-Idy" firstAttribute="top" secondItem="12u-aF-nJI" secondAttribute="bottom" constant="25" id="Kja-SQ-tjS"/>
+                            <constraint firstItem="12u-aF-nJI" firstAttribute="top" secondItem="1fI-nu-aFZ" secondAttribute="bottom" constant="8" id="IqI-cM-JWg"/>
+                            <constraint firstItem="OKg-mn-Idy" firstAttribute="top" secondItem="12u-aF-nJI" secondAttribute="bottom" constant="39" id="Kja-SQ-tjS"/>
                             <constraint firstItem="knc-Ac-IQM" firstAttribute="top" secondItem="NqC-1N-7St" secondAttribute="bottom" constant="5" id="OHb-wH-IlT"/>
                             <constraint firstItem="y36-JW-imm" firstAttribute="bottom" secondItem="knc-Ac-IQM" secondAttribute="bottom" constant="42" id="SRf-E2-4Xw"/>
-                            <constraint firstItem="NqC-1N-7St" firstAttribute="top" secondItem="OKg-mn-Idy" secondAttribute="bottom" constant="11" id="WAl-Ok-LIm"/>
+                            <constraint firstItem="NqC-1N-7St" firstAttribute="top" secondItem="OKg-mn-Idy" secondAttribute="bottom" constant="-13" id="WAl-Ok-LIm"/>
                             <constraint firstItem="NqC-1N-7St" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="gW8-qJ-up3"/>
-                            <constraint firstItem="y36-JW-imm" firstAttribute="trailing" secondItem="12u-aF-nJI" secondAttribute="trailing" constant="5" id="iP5-ZA-CKT"/>
-                            <constraint firstItem="12u-aF-nJI" firstAttribute="top" secondItem="WIq-cP-TyF" secondAttribute="top" constant="441" id="txx-UW-He2"/>
-                            <constraint firstItem="12u-aF-nJI" firstAttribute="leading" secondItem="WIq-cP-TyF" secondAttribute="leading" constant="5" id="uw0-49-zES"/>
                             <constraint firstItem="OKg-mn-Idy" firstAttribute="centerX" secondItem="WIq-cP-TyF" secondAttribute="centerX" id="vXZ-uq-6WC"/>
-                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="top" secondItem="MR0-vm-QGP" secondAttribute="bottom" constant="33" id="yMP-5w-J7O"/>
+                            <constraint firstItem="1fI-nu-aFZ" firstAttribute="top" secondItem="MR0-vm-QGP" secondAttribute="bottom" constant="44" id="yMP-5w-J7O"/>
                         </constraints>
                     </view>
                     <connections>
@@ -713,8 +711,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-BZ-7zX">
+                                <rect key="frame" x="130" y="452" width="154" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Payment On" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-jP-IoX">
-                                <rect key="frame" x="117" y="279.5" width="180.5" height="29"/>
+                                <rect key="frame" x="117" y="279.5" width="180" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -731,29 +735,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment made to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTm-Di-I2x">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment made to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTm-Di-I2x">
                                 <rect key="frame" x="117" y="399" width="180" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-BZ-7zX">
-                                <rect key="frame" x="131" y="452" width="153" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKf-0A-rGT">
+                                <rect key="frame" x="66" y="701" width="283" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Delete Recurring Payment" backgroundImage="square.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RVQ-07-oxV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hhB-jP-IoX" firstAttribute="top" secondItem="4zw-Ik-14K" secondAttribute="bottom" constant="35" id="05G-Dt-7ve"/>
+                            <constraint firstItem="Yme-BZ-7zX" firstAttribute="top" secondItem="QTm-Di-I2x" secondAttribute="bottom" constant="24" id="FjQ-QM-GE2"/>
                             <constraint firstItem="qN7-HB-VqF" firstAttribute="top" secondItem="S1g-MW-tcU" secondAttribute="bottom" constant="58" id="QoZ-yS-VOB"/>
+                            <constraint firstItem="RVQ-07-oxV" firstAttribute="trailing" secondItem="Yme-BZ-7zX" secondAttribute="trailing" constant="130" id="Ueg-3x-VUV"/>
                             <constraint firstItem="hEd-Hm-n9a" firstAttribute="top" secondItem="hhB-jP-IoX" secondAttribute="bottom" constant="1" id="WYc-DN-gi2"/>
+                            <constraint firstItem="QTm-Di-I2x" firstAttribute="leading" secondItem="hhB-jP-IoX" secondAttribute="leading" id="YoU-Pu-ouW"/>
+                            <constraint firstItem="Yme-BZ-7zX" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="ZeS-Rx-KLi"/>
+                            <constraint firstItem="QTm-Di-I2x" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="117" id="afc-Yn-nbO"/>
+                            <constraint firstItem="QTm-Di-I2x" firstAttribute="top" secondItem="hEd-Hm-n9a" secondAttribute="bottom" constant="46.5" id="bL1-Ra-ncJ"/>
                             <constraint firstItem="hhB-jP-IoX" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="faI-jv-7UP"/>
                             <constraint firstItem="qN7-HB-VqF" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="g4E-VV-aPi"/>
+                            <constraint firstItem="Yme-BZ-7zX" firstAttribute="leading" secondItem="RVQ-07-oxV" secondAttribute="leading" constant="130" id="mjc-79-JC5"/>
                             <constraint firstItem="4zw-Ik-14K" firstAttribute="top" secondItem="qN7-HB-VqF" secondAttribute="bottom" constant="1" id="nWS-qg-Vu8"/>
                             <constraint firstItem="S1g-MW-tcU" firstAttribute="top" secondItem="RVQ-07-oxV" secondAttribute="top" constant="31" id="olm-3l-neN"/>
                             <constraint firstItem="S1g-MW-tcU" firstAttribute="centerX" secondItem="iS3-Xw-bcY" secondAttribute="centerX" id="pR6-bN-ZJ5"/>
@@ -770,7 +780,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zs-5S-pwc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3629" y="746"/>
+            <point key="canvasLocation" x="3628.985507246377" y="745.98214285714278"/>
         </scene>
     </scenes>
     <resources>
@@ -780,6 +790,7 @@
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

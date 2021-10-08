@@ -13,21 +13,21 @@ import Foundation
  
  */
 class RecurringPayment {
+    
     var name: String?
     var creator: String?
     var id: UUID?
+    
     //payer of payment
     var payer: User?
     //Receiver of payment
     var payee: User?
+    //Dollar amount that is paid
     var paymentAmount: Float?
+    //On what basis the payment will be made
     var paymentFrequency: String?
+    //APPLICABLE ONLY TO MONTHLY - day of the month payment will be made
     var paymentDate: Int?
-    //var member: Member?
-    //var members: [Member] = []
-    //Used when recurring payment is initially created
-    var paymentBeginDate: Date?
-    //frequency in days
     
 }
 
