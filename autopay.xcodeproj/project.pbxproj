@@ -13,6 +13,7 @@
 		7F290E302654CFD4000025F8 /* SendFakeVenmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E2F2654CFD4000025F8 /* SendFakeVenmo.swift */; };
 		7F290E3526572D02000025F8 /* SendVenmoPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E3426572D02000025F8 /* SendVenmoPayment.swift */; };
 		7F290E4A2657332B000025F8 /* GetDeviceId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290E492657332B000025F8 /* GetDeviceId.swift */; };
+		7F2E9D49270FDD2600008FE0 /* RecurringPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E9D48270FDD2600008FE0 /* RecurringPayments.swift */; };
 		7F4EE9E225C8F58B0035C8E1 /* RegisterBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */; };
 		7F4EE9EA25C9C0160035C8E1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */; };
 		7F4EE9F225CA3F6E0035C8E1 /* RegisterCreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */; };
@@ -64,6 +65,7 @@
 		7F290E2F2654CFD4000025F8 /* SendFakeVenmo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFakeVenmo.swift; sourceTree = "<group>"; };
 		7F290E3426572D02000025F8 /* SendVenmoPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendVenmoPayment.swift; sourceTree = "<group>"; };
 		7F290E492657332B000025F8 /* GetDeviceId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceId.swift; sourceTree = "<group>"; };
+		7F2E9D48270FDD2600008FE0 /* RecurringPayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringPayments.swift; sourceTree = "<group>"; };
 		7F4EE9E125C8F58B0035C8E1 /* RegisterBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBankViewController.swift; sourceTree = "<group>"; };
 		7F4EE9E925C9C0160035C8E1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7F4EE9F125CA3F6E0035C8E1 /* RegisterCreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCreditViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				7F290E2F2654CFD4000025F8 /* SendFakeVenmo.swift */,
 				7F290E3426572D02000025F8 /* SendVenmoPayment.swift */,
 				7F290E492657332B000025F8 /* GetDeviceId.swift */,
+				7F2E9D48270FDD2600008FE0 /* RecurringPayments.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				7F290E3526572D02000025F8 /* SendVenmoPayment.swift in Sources */,
 				7F290E302654CFD4000025F8 /* SendFakeVenmo.swift in Sources */,
 				7F4EEA1D25DB77C30035C8E1 /* User.swift in Sources */,
+				7F2E9D49270FDD2600008FE0 /* RecurringPayments.swift in Sources */,
 				7F4EE9FA25CA450A0035C8E1 /* LoginViewController.swift in Sources */,
 				7FCF006E25C5D99A00D152D7 /* RegisterPaymentViewController.swift in Sources */,
 				7FCF006125C27E2F00D152D7 /* LandingViewController.swift in Sources */,

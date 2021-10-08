@@ -27,6 +27,7 @@ public class User {
     var recurringPayments: [RecurringPayment] = []
     
     //TODO
+    //FIND SECURE WAYS TO STORE BANK ACCOUNTS AND CREDIT CARDS
     //var bankAccounts: [bankAccount]?
     //var creditCards: [creditCard]?
         
