@@ -10,7 +10,16 @@ class RecurringPayments {
         var functions = Functions.functions()
         
         //TODO - Read how to pass a JSON into a firebase functions call using the call() function
-        functions.httpsCallable("addRecurringPayment").call() { result, error in
+        functions.httpsCallable("addRecurringPayment").call([
+            "name": recPay.name,
+            "creator": recPay.creator,
+            "id": recPay.id,
+            "payer": recPay.payer,
+            "payee": recPay.payee,
+            "paymentAmount": recPay.paymentAmount,
+            "paymentFrequency": recPay.paymentFrequency,
+            "paymentDate": recPay.paymentDate
+        ]) { result, error in
           if let error = error as NSError? {
             if error.domain == FunctionsErrorDomain {
               let code = FunctionsErrorCode(rawValue: error.code)
